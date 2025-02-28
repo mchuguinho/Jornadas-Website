@@ -9,6 +9,14 @@
     font-weight: bold;
 }
 
+* {
+    font-family: Nexa;
+}
+
+body {
+    background-color: black;
+}
+
 #title{
     font-family: Nexa;
     font-weight: bold;
@@ -16,4 +24,8 @@
 
 #navbarNav {
     justify-content: right;
+}
+
+.nav-link {
+    color: rgb(248, 178, 83, 255) !important;
 }
