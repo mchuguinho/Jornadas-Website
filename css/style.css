@@ -13,3 +13,7 @@
     font-family: Nexa;
     font-weight: bold;
 }
+
+#navbarNav {
+    justify-content: right;
+}
