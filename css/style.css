@@ -14,7 +14,8 @@
 }
 
 body {
-    background-color: rgb(0, 88, 116, 255);
+    background-image: linear-gradient(rgba(0,71,92,255), rgba(0,88,116,255));
+    /* background-color: rgb(0, 88, 116, 255); */
 }
 
 #title{
@@ -29,7 +30,8 @@ body {
 .nav-link {
     transition: text-shadow 0.5s ease;
     color: rgb(248, 178, 83, 255) !important;
-    font-size: 23px;
+    font-size: 17px;
+    font-weight: bold;
 }
 
 .nav-link:hover {
@@ -45,9 +47,9 @@ body {
     left: 0;
     bottom: 0;
     width: 100%;
-    height: auto;
+    height: 15%;
     padding: 10px 0;
-    background-color: rgb(0, 88, 116, 255);
+    background-image: linear-gradient(rgb(32,36,36), black);
     color: rgb(248, 178, 83, 255);
 }
 
@@ -58,18 +60,25 @@ body {
 
 #curso-ecgm {
     text-align: center;
-    margin-top: 10px;
+    margin-top: 20px;
+    font-weight: bold;
 }
 
 .icon-cursos {
-    padding-right: 10px;
+    padding-right: 43px;
 }
 
-.icon-redes, .icon-apoios {
-    width: 100%; 
-    max-width: 20px;
-    max-height: 16px;
+.icon-redes {
+    max-width: 30px;
+    max-height: 26px;
     height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.icon-apoios {
+    max-width: 30px;
+    max-height: 26px;
     display: block;
     margin: 0 auto;
 }
