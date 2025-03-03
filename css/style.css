@@ -1,3 +1,5 @@
+/* FONTE CARREGADA */
+
 @font-face {
     font-family: Nexa;
     src: url(../font/Nexa-ExtraLight.ttf);
@@ -13,9 +15,21 @@
     font-family: Nexa;
 }
 
-body {
-    background-image: linear-gradient(rgba(0,71,92,255), rgba(0,88,116,255));
-    /* background-color: rgb(0, 88, 116, 255); */
+/* PÁGINA GERAL */
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+body { 
+    background-image: linear-gradient(rgba(0,131,153,255), rgba(0,88,116,255));
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    background-repeat: no-repeat;
+    flex-direction: column;
 }
 
 #title{
@@ -23,8 +37,11 @@ body {
     font-weight: bold;
 }
 
+/* NAVBAR */
+
 #navbarNav {
     justify-content: right;
+    text-align: right;
 }
 
 .nav-link {
@@ -41,6 +58,8 @@ body {
 .navbar-brand {
     font-weight: bold;
 }
+
+/* FOOTER */
 
 .footer{
     position: fixed;
@@ -68,6 +87,10 @@ body {
     padding-right: 43px;
 }
 
+.icon-cursos:hover {
+    cursor: pointer;
+}
+
 .icon-redes {
     max-width: 30px;
     max-height: 26px;
@@ -81,4 +104,30 @@ body {
     max-height: 26px;
     display: block;
     margin: 0 auto;
+}
+
+/* MODAL */
+.modal-content{
+    background-image: linear-gradient(rgba(0,131,153,255), rgba(0,88,116,255));
+    border-radius: 15px;
+}
+
+#cursoModalLabel {
+    font-weight: bold;
+    color: rgb(248, 178, 83, 255);
+}
+
+#cursoModalBody{
+    font-weight: bold;
+    color: white;
+    text-align: justify;
+}
+
+#cursoIconModal{
+    display: flex;
+    justify-self: center;
+}
+
+.btn-close {
+    filter: invert(1);
 }

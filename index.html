@@ -4,10 +4,10 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/assets/icons/IconJCGM.png">
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/style.css">
     <title>Jornadas da Computação Gráfica e Multimédia</title>
-    <link rel="icon" type="image/x-icon" href="/assets/icons/IconJCGM.png">
     <script src="js/bootstrap.js"></script>
     <script src="js/script.js"></script>
 </head>
@@ -41,7 +41,6 @@
             </div>
         </div>
     </nav>
-    <img src="assets/icons/IconJornadas.png" id="iconJornadas" alt="">
     <footer class="bottom-line end">
         <div class="footer navbar-dark bg-dark">
             <div class="container">
@@ -50,9 +49,15 @@
                         <div class="redes-sociais">
                             <p class="footer-text">Redes Sociais:</p>
                             <div class="d-flex justify-content-around">
-                                <img class="icon-redes" src="assets/redes/instagram.png" alt="icon-insta">
-                                <img class="icon-redes" src="assets/redes/youtube.png" alt="icon-youtube">
-                                <img class="icon-redes" src="assets/redes/facebook.png" alt="icon-facebook">
+                                <a href="https://www.instagram.com/jcgm.ipvc/">
+                                    <img class="icon-redes" src="assets/redes/instagram.png" alt="icon-insta">
+                                </a>
+                                <a href="https://www.youtube.com/channel/UCdvUQiQPXMRlDyihSRS8c3g">
+                                    <img class="icon-redes" src="assets/redes/youtube.png" alt="icon-youtube">
+                                </a>
+                                <a href="https://pt-pt.facebook.com/IPVC.JCGM/">
+                                    <img class="icon-redes" src="assets/redes/facebook.png" alt="icon-facebook">
+                                </a>
                             </div>
                         </div>
                     </div>
@@ -60,9 +65,9 @@
                         <div class="cursos">
                             <p class="footer-text">Cursos:</p>
                             <div class="d-flex justify-content-around">
-                                <img class="icon-cursos" src="assets/cursos/ecgm.png" alt="icon-ecgm">
-                                <img class="icon-cursos" src="assets/cursos/dwm.png" alt="icon-dwm">
-                                <img class="icon-cursos" src="assets/cursos/ncgm.png" alt="icon-ncgm">
+                                <img class="icon-cursos" src="assets/cursos/ecgm.png" alt="icon-ecgm" onclick="mostrarCursoInfo('ecgm')">
+                                <img class="icon-cursos" src="assets/cursos/dwm.png" alt="icon-dwm" onclick="mostrarCursoInfo('dwm')">
+                                <img class="icon-cursos" src="assets/cursos/ncgm.png" alt="icon-ncgm" onclick="mostrarCursoInfo('ncgm')">
                             </div>
                         </div>
                     </div>
@@ -83,7 +88,19 @@
             </div>
         </div>
     </footer>
-    
+    <div class="modal fade" id="cursoModal" tabindex="-1" aria-labelledby="cursoModalLabel" aria-hidden="true" data-bs-backdrop="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="cursoModalLabel"></h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body" id="cursoModalBody">
+                    <!-- Conteúdo do curso aqui -->
+                </div>
+            </div>
+        </div>
+    </div>    
 </body>
 
 </html>
