@@ -26,7 +26,7 @@ html, body {
 body { 
     background-image: url("../assets/Background.png");
     background-attachment: fixed;
-    background-size: cover;
+    background-position: center;
     display: flex;
     background-repeat: no-repeat;
     flex-direction: column;
@@ -39,6 +39,10 @@ body {
 
 /* NAVBAR */
 
+.bg-dark {
+    background-color: rgba(33, 37, 41, 0.6) !important;
+}
+
 #navbarNav {
     justify-content: right;
     text-align: right;
@@ -46,7 +50,7 @@ body {
 
 .nav-link {
     transition: text-shadow 0.5s ease;
-    color: rgb(248, 178, 83, 255) !important;
+    color: rgba(248, 178, 83, 255) !important;
     font-size: 17px;
     font-weight: bold;
 }
@@ -68,7 +72,7 @@ body {
     width: 100%;
     height: 15%;
     padding: 10px 0;
-    background-image: linear-gradient(rgb(32,36,36), black);
+    background-image: linear-gradient(rgba(32,36,36, 0.6), black);
     color: rgb(248, 178, 83, 255);
 }
 
@@ -77,14 +81,24 @@ body {
     margin-bottom: 5px !important; 
 }
 
+.border {
+    border: none !important;;
+    margin: 0 10px;
+}
+
 #curso-ecgm {
     text-align: center;
     margin-top: 20px;
     font-weight: bold;
 }
 
-.icon-cursos {
-    padding-right: 43px;
+#ncgm-icon {
+    width: 60px;
+    height: 20px;
+}
+
+#ncgm-icon:hover {
+    cursor: pointer;
 }
 
 .icon-cursos:hover {
@@ -103,7 +117,6 @@ body {
     max-width: 30px;
     max-height: 26px;
     display: block;
-    margin: 0 auto;
 }
 
 /* MODAL */

@@ -13,9 +13,9 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#title">23ª JCGM</a>
+            <a class="navbar-brand" href="#title">XXIII JCGM</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -44,52 +44,62 @@
     <footer class="bottom-line end">
         <div class="footer navbar-dark bg-dark">
             <div class="container">
-                <div class="row text-center">
-                    <div class="col-12 col-md-3">
-                        <div class="redes-sociais">
-                            <p class="footer-text">Redes Sociais:</p>
-                            <div class="d-flex justify-content-around">
-                                <a href="https://www.instagram.com/jcgm.ipvc/">
-                                    <img class="icon-redes" src="assets/redes/instagram.png" alt="icon-insta">
-                                </a>
-                                <a href="https://www.youtube.com/channel/UCdvUQiQPXMRlDyihSRS8c3g">
-                                    <img class="icon-redes" src="assets/redes/youtube.png" alt="icon-youtube">
-                                </a>
-                                <a href="https://pt-pt.facebook.com/IPVC.JCGM/">
-                                    <img class="icon-redes" src="assets/redes/facebook.png" alt="icon-facebook">
-                                </a>
+                <div class="row text-center g-0">
+                    <div class="row">
+                        <div class="col-12 col-md-1"></div>
+                        <div class="col-12 col-md-3 border">
+                            <div class="redes-sociais">
+                                <p class="footer-text">Redes Sociais:</p>
+                                <div class="d-flex justify-content-around">
+                                    <a href="https://www.instagram.com/jcgm.ipvc/">
+                                        <img class="icon-redes" src="assets/redes/instagram.png" alt="icon-insta">
+                                    </a>
+                                    <a href="https://www.youtube.com/channel/UCdvUQiQPXMRlDyihSRS8c3g">
+                                        <img class="icon-redes" src="assets/redes/youtube.png" alt="icon-youtube">
+                                    </a>
+                                    <a href="https://pt-pt.facebook.com/IPVC.JCGM/">
+                                        <img class="icon-redes" src="assets/redes/facebook.png" alt="icon-facebook">
+                                    </a>
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-4">
-                        <div class="cursos">
-                            <p class="footer-text">Cursos:</p>
-                            <div class="d-flex justify-content-around">
-                                <img class="icon-cursos" src="assets/cursos/ecgm.png" alt="icon-ecgm" onclick="mostrarCursoInfo('ecgm')">
-                                <img class="icon-cursos" src="assets/cursos/dwm.png" alt="icon-dwm" onclick="mostrarCursoInfo('dwm')">
+                        <div class="col-12 col-md-4 border">
+                            <div class="cursos">
+                                <p class="footer-text">Cursos:</p>
+                                <div class="d-flex justify-content-around">
+                                    <img class="icon-cursos" src="assets/cursos/ecgm.png" alt="icon-ecgm"
+                                        onclick="mostrarCursoInfo('ecgm')">
+                                    <img class="icon-cursos" src="assets/cursos/dwm.png" alt="icon-dwm"
+                                        onclick="mostrarCursoInfo('dwm')">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-12 col-md-3">
-                        <div class="apoios">
-                            <p class="footer-text">Apoios:</p>
-                            <div class="d-flex justify-content-around">
-                                <a href="https://www.ipvc.pt">
-                                    <img class="icon-apoios" src="assets/apoios/ipvc.png" alt="icon-ipvc">
-                                </a>
-                                <img class="icon-apoios" src="assets/apoios/viana.png" alt="icon-viana">
-                                <img src="assets/cursos/ncgm.png" alt="icon-ncgm" onclick="mostrarCursoInfo('ncgm')">
+                        <div class="col-12 col-md-3 border">
+                            <div class="apoios">
+                                <p class="footer-text">Apoios:</p>
+                                <div class="d-flex justify-content-around">
+                                    <a href="https://www.ipvc.pt">
+                                        <img class="icon-apoios" src="assets/apoios/ipvc.png" alt="icon-ipvc">
+                                    </a>
+                                    <img id="ncgm-icon" src="assets/cursos/ncgm.png" alt="icon-ncgm"
+                                        onclick="mostrarCursoInfo('ncgm')">
+                                    <img class="icon-apoios" src="assets/apoios/viana.png" alt="icon-viana">
+                                </div>
                             </div>
                         </div>
+                        <div class="col-12 col-md-1"></div>
                     </div>
-                    <div class="col-12">
-                        <p id="curso-ecgm">Licenciatura em Engenharia da Computação Gráfica e Multimédia, 2025</p>
+                    <div class="row">
+                        <div class="col-12">
+                            <p id="curso-ecgm">Licenciatura em Engenharia da Computação Gráfica e Multimédia, 2025</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </footer>
-    <div class="modal fade" id="cursoModal" tabindex="-1" aria-labelledby="cursoModalLabel" aria-hidden="true" data-bs-backdrop="true">
+    <div class="modal fade" id="cursoModal" tabindex="-1" aria-labelledby="cursoModalLabel" aria-hidden="true"
+        data-bs-backdrop="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
@@ -101,7 +111,7 @@
                 </div>
             </div>
         </div>
-    </div>    
+    </div>
 </body>
 
 </html>
