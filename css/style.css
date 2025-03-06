@@ -78,6 +78,11 @@ main {
     padding-left: 5%;
 }
 
+#video-jornadas {
+    border: 1px solid;
+    border-color: rgba(248, 178, 83, 255);
+}
+
 /* FOOTER */
 
 .footer {
