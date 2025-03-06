@@ -27,7 +27,7 @@ html, body {
 body {
     display: flex;
     flex-direction: column;
-    background-image: url("../assets/Background.png");
+    background-image: url("../assets/icons/Background.png");
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
