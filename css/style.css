@@ -72,6 +72,12 @@ main {
     font-weight: bold;
 }
 
+/* INICIO */
+
+.logo-jornadas {
+    padding-left: 5%;
+}
+
 /* FOOTER */
 
 .footer {
