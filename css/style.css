@@ -74,7 +74,35 @@ main {
   font-weight: bold;
 }
 
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: rgba(0, 88, 136, 255);
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
 /* INICIO */
+
+#inicio {
+  margin: 0 auto;
+  place-content: center;
+}
 
 .logo-jornadas {
   padding-left: 5%;
@@ -92,13 +120,12 @@ main {
   place-content: center;
 }
 
-#title-oferta {
-  font-weight: bold;
-  color: white;
-  text-align: center;
-}
-
 /* Workshops */
+
+#workshops {
+  margin: 0 auto;
+  place-content: center;
+}
 
 #unity{
   transform: scale(0.3);
@@ -298,4 +325,17 @@ svg {
 
 #cursoModalSvgContainer {
   padding-bottom: 20px;
+}
+
+/* Contactos */
+
+#contactos {
+  margin: 0 auto;
+  place-content: center;
+}
+
+.title-contacto {
+  font-weight: bold;
+  color: white;
+  text-align: center;
 }
