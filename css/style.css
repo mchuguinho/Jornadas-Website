@@ -104,29 +104,41 @@ main {
   transform: scale(0.3);
 }
 
+#workshops{
+  margin: 0 auto;
+  place-content: center;
+}
+
 #title-workshops {
   font-weight: bold;
   color: white;
   text-align: center;
 }
 
-.titleWorkshops {
+.titleWorkshopsUnity {
   font-weight: bold;
 }
 
-.textoWorkshops {
+.titleWorkshopsBlender {
+  font-weight: bold;
+}
+
+.textoUnity {
+  font-size: 16px;
+  font-family: Nexa;
+}
+
+.textoBlender {
   font-size: 16px;
   font-family: Nexa;
 }
 
 .container {
   position: relative;
-  width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-warp: warp;
-  padding: 30px;
 }
 
 .container .card {
