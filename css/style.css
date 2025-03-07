@@ -356,3 +356,12 @@ svg {
   color: white;
   text-align: center;
 }
+
+.svg-contactos {
+  text-align: center;
+  align-content: center;
+}
+
+.p-contactos {
+  color: white;
+}
