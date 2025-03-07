@@ -104,24 +104,9 @@ main {
   text-align: center;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  font-family: Nexa;
-}
-
-body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background-color: #43345d;
-  min-height: 800px;
-}
-
 .container {
   position: relative;
-  width: 1100px;
+  width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -150,11 +135,7 @@ body {
 
 .container .card .image {
   position: relative;
-  width: 260px;
-  height: 260px;
   top: -40%;
-  left: 8px;
-  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
