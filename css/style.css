@@ -28,7 +28,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  background-image: url("../assets/icons/background.png");
+  background-image: url("../assets/icons/background_gauss.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -131,24 +131,41 @@ main {
   transform: scale(0.3);
 }
 
+#workshops{
+  margin: 0 auto;
+  place-content: center;
+}
+
 #title-workshops {
   font-weight: bold;
   color: white;
   text-align: center;
 }
 
-.titleWorkshops {
+.titleWorkshopsUnity {
   font-weight: bold;
+}
+
+.titleWorkshopsBlender {
+  font-weight: bold;
+}
+
+.textoUnity {
+  font-size: 16px;
+  font-family: Nexa;
+}
+
+.textoBlender {
+  font-size: 16px;
+  font-family: Nexa;
 }
 
 .container {
   position: relative;
-  width: auto;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-warp: warp;
-  padding: 30px;
 }
 
 .container .card {
