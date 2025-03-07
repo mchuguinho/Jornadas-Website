@@ -28,7 +28,7 @@ body {
 body {
   display: flex;
   flex-direction: column;
-  background-image: url("../assets/icons/background.png");
+  background-image: url("../assets/icons/background_gauss.png");
   background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
@@ -112,6 +112,11 @@ main {
 
 .titleWorkshops {
   font-weight: bold;
+}
+
+.textoWorkshops {
+  font-size: 16px;
+  font-family: Nexa;
 }
 
 .container {
