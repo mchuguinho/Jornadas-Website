@@ -1,166 +1,230 @@
 /* FONTE CARREGADA */
 
 @font-face {
-    font-family: Nexa;
-    src: url(../font/Nexa-ExtraLight.ttf);
+  font-family: Nexa;
+  src: url(../font/Nexa-ExtraLight.ttf);
 }
 
 @font-face {
-    font-family: Nexa;
-    src: url(../font/Nexa-Heavy.ttf);
-    font-weight: bold;
+  font-family: Nexa;
+  src: url(../font/Nexa-Heavy.ttf);
+  font-weight: bold;
 }
 
 * {
-    font-family: Nexa;
+  font-family: Nexa;
 }
 
 /* PÁGINA GERAL */
 
-html, body {
-    height: 100%;
-    margin: 0;
-    padding: 0;
-    padding-top: 1.3%;
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  padding-top: 1.3%;
 }
 
 body {
-    display: flex;
-    flex-direction: column;
-    background-image: url("../assets/icons/Background.png");
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 100vh;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
+  background-image: url("../assets/icons/background.png");
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 100vh;
+  flex-direction: column;
 }
 
 main {
-    flex: 1; /* Faz com que o conteúdo ocupe o espaço disponível */
-    padding: 20px;
+  flex: 1; /* Faz com que o conteúdo ocupe o espaço disponível */
+  padding: 20px;
 }
 
 #title {
-    font-family: Nexa;
-    font-weight: bold;
+  font-family: Nexa;
+  font-weight: bold;
 }
 
 /* NAVBAR */
 
 .bg-dark {
-    background-color: rgba(33, 37, 41, 0.6) !important;
+  background-color: rgba(33, 37, 41, 0.6) !important;
 }
 
 #navbarNav {
-    justify-content: right;
-    text-align: right;
+  justify-content: right;
+  text-align: right;
 }
 
 .nav-link {
-    transition: text-shadow 0.5s ease;
-    color: rgba(248, 178, 83, 255) !important;
-    font-size: 17px;
-    font-weight: bold;
+  transition: text-shadow 0.5s ease;
+  color: rgba(248, 178, 83, 255) !important;
+  font-size: 17px;
+  font-weight: bold;
 }
 
 .nav-link:hover {
-    text-shadow: 0 0 5px peachpuff;
+  text-shadow: 0 0 5px peachpuff;
 }
 
 .navbar-brand {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /* INICIO */
 
 .logo-jornadas {
-    padding-left: 5%;
+  padding-left: 5%;
 }
 
 #video-jornadas {
-    border: 1px solid;
-    border-color: rgba(248, 178, 83, 255);
+  border: 2px solid;
+  border-color: rgba(248, 178, 83, 255);
+}
+
+/* CURSOS */
+
+#informacao {
+    margin: 0 auto;
+    place-content: center;
+}
+
+#title-oferta {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+}
+
+.title-cursos {
+  color: white;
+  margin-top: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+svg {
+  padding-top: 3%;
+  width: 40%;
+  height: 40%;
+}
+
+.col-12.col-md-4 svg {
+  margin: 0 auto;
+  display: block;
+}
+
+.svg-shadow {
+  animation: svg-glow 1.5s ease-in-out infinite alternate;
+}
+
+.clickable-svg {
+    cursor: pointer;
+}
+
+@keyframes svg-glow {
+  from {
+    filter: drop-shadow(0 0 3px rgb(0, 88, 116))
+      drop-shadow(0 0 6px rgb(0, 88, 116))
+      drop-shadow(0 0 8px rgb(248, 178, 83));
+  }
+
+  to {
+    filter: drop-shadow(0 0 4px rgb(248, 178, 83))
+      drop-shadow(0 0 6px rgb(0, 88, 116)) drop-shadow(0 0 10px rgb(0, 88, 116));
+  }
 }
 
 /* FOOTER */
 
 .footer {
-    position: relative; /* Deixa de ser fixo */
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    height: auto;
-    padding: 10px 0;
-    background-image: linear-gradient(rgba(32,36,36, 0.6), black);
-    color: rgb(248, 178, 83, 255);
+  position: relative; /* Deixa de ser fixo */
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: auto;
+  padding: 10px 0;
+  background-image: linear-gradient(rgba(32, 36, 36, 0.6), black);
+  color: rgb(248, 178, 83, 255);
 }
 
 .footer-text {
-    font-weight: bold;
-    margin-bottom: 5px !important;
+  font-weight: bold;
+  margin-bottom: 5px !important;
 }
 
 .border {
-    border: none !important;
-    margin: 0 10px;
+  border: none !important;
+  margin: 0 10px;
 }
 
 #curso-ecgm {
-    text-align: center;
-    margin-top: 20px;
-    font-weight: bold;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
 }
 
 #ncgm-icon {
-    width: 60px;
-    height: 20px;
+  width: 60px;
+  height: 20px;
 }
 
 #ncgm-icon:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .icon-cursos:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .icon-redes {
-    max-width: 30px;
-    max-height: 26px;
-    height: auto;
-    display: block;
-    margin: 0 auto;
+  max-width: 30px;
+  max-height: 26px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .icon-apoios {
-    max-width: 30px;
-    max-height: 26px;
-    display: block;
+  max-width: 30px;
+  max-height: 26px;
+  display: block;
 }
 
 /* MODAL */
+
 .modal-content {
-    background-image: linear-gradient(rgba(0,131,153,255), rgba(0,88,116,255));
-    border-radius: 15px;
+  background-image: linear-gradient(
+    to bottom,
+    rgba(0, 62, 75, 0.8),
+    rgb(1, 14, 19)
+  );
+  border-radius: 15px;
+  border: 2px solid;
+  border-color: rgba(248, 178, 83, 255);
 }
 
 #cursoModalLabel {
-    font-weight: bold;
-    color: rgb(248, 178, 83, 255);
+  font-weight: bold;
+  color: rgb(248, 178, 83, 255);
 }
 
 #cursoModalBody {
-    font-weight: bold;
-    color: white;
-    text-align: justify;
+  font-weight: bold;
+  color: white;
+  text-align: justify;
 }
 
 #cursoIconModal {
-    display: flex;
-    justify-self: center;
+  display: flex;
+  justify-self: center;
 }
 
 .btn-close {
-    filter: invert(1);
+  filter: invert(1);
+}
+
+#cursoModalSvgContainer {
+    padding-bottom: 20px;
 }
