@@ -54,6 +54,10 @@ main {
   background-color: rgba(33, 37, 41, 0.6) !important;
 }
 
+.bg-dark2 {
+  background-color: black !important;
+}
+
 #navbarNav {
   justify-content: right;
   text-align: right;
@@ -140,6 +144,12 @@ main {
   font-weight: bold;
   color: white;
   text-align: center;
+}
+
+.programa2 {
+  width: 50%; 
+  height: 50%;
+  transform: scale(0.4);
 }
 
 /* CURSOS */
@@ -276,7 +286,6 @@ main {
 .container2 .card2:hover {
   height : 500px;    
 }
-
 
 .container2 .card2 .image2 {
   position : relative;
