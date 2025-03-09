@@ -104,8 +104,24 @@ main {
   place-content: center;
 }
 
+@keyframes rotacaoY {
+  from {
+    transform: rotateY(0deg);
+  }
+  to {
+    transform: rotateY(360deg);
+  }
+}
+
 .logo-jornadas {
   padding-left: 5%;
+}
+
+.logo-jornadas:hover {
+  animation: rotacaoY 5s linear infinite;
+  transform-style: preserve-3d;
+  display: block;
+  perspective: 1000px;
 }
 
 #video-jornadas {
@@ -359,4 +375,13 @@ svg {
   font-weight: bold;
   color: white;
   text-align: center;
+}
+
+.svg-contactos {
+  text-align: center;
+  align-content: center;
+}
+
+.p-contactos {
+  color: white;
 }
