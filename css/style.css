@@ -380,10 +380,9 @@ svg {
   left: 0;
   bottom: 0;
   width: 100%;
-  height: auto;
-  padding: 10px 0;
+  padding: 15px 0;
   background-image: linear-gradient(rgba(32, 36, 36, 0.6), black);
-  color: rgb(248, 178, 83, 255);
+  color: rgb(248, 178, 83);
 }
 
 .footer-text {
@@ -397,9 +396,9 @@ svg {
 }
 
 #curso-ecgm {
-  text-align: center;
-  margin-top: 20px;
   font-weight: bold;
+  font-size: 1rem;
+  margin: 0;
 }
 
 #ncgm-icon {
@@ -415,18 +414,42 @@ svg {
   cursor: pointer;
 }
 
-.icon-redes {
+.icon-redes, .icon-apoios {
   max-width: 30px;
   max-height: 26px;
-  height: auto;
-  display: block;
-  margin: 0 auto;
+  margin: 0 8px;
+  transition: transform 0.2s ease-in-out;
 }
 
-.icon-apoios {
-  max-width: 30px;
-  max-height: 26px;
-  display: block;
+.icon-redes:hover, .icon-apoios:hover {
+  transform: scale(1.1);
+}
+
+.redes-sociais, .apoios {
+  text-align: center;
+}
+
+.redes-sociais .d-flex, .apoios .d-flex {
+  gap: 10px;
+}
+
+.footer .col-md-4 {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.footer .me-4 {
+  margin-right: 1.5rem;
+}
+
+.footer .mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.icon-redes, .icon-apoios {
+  max-width: 28px;
+  max-height: 24px;
+  margin: 0 4px;
 }
 
 /* MODAL */
