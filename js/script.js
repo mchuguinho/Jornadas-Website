@@ -37,3 +37,6 @@ function mostrarCursoInfo(curso) {
         console.error('Curso não encontrado:', curso);
     }
 }
+
+const d = new Date();
+document.getElementById("ano").innerHTML = d.getFullYear();
