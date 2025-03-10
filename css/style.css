@@ -117,6 +117,15 @@ main {
   }
 }
 
+@keyframes rotacaoZ {
+  from {
+    transform: rotateZ(0deg);
+  }
+  to {
+    transform: rotateZ(360deg);
+  }
+}
+
 .logo-jornadas {
   padding-left: 5%;
 }
@@ -201,10 +210,11 @@ svg {
   transform: scale(0.3);
 }
 
-#workshops{
-  margin: 0 auto;
-  place-content: center;
+.p-workshops {
+  font-size: 24px;
+  text-align: center;
 }
+
 
 #title-workshops {
   font-weight: bold;
@@ -356,12 +366,17 @@ svg {
   
 }
 
+.icon-workshop{
+  animation: rotacaoZ 5s linear infinite;
+  transform-style: preserve-3d;
+  display: block;
+  perspective: 1000px;
+}
 
 /* FOOTER */
 
 .footer {
   position: relative;
-  /* Deixa de ser fixo */
   left: 0;
   bottom: 0;
   width: 100%;
@@ -459,16 +474,12 @@ svg {
   font-weight: bold;
   color: white;
   text-align: center;
+  font-size: 22px;
 }
 
 .svg-contactos {
   text-align: center;
   align-content: center;
-}
-
-.p-workshops {
-  font-size: 24px;
-  text-align: center;
 }
 
 .p-contactos, .p-workshops {
@@ -477,4 +488,9 @@ svg {
 
 .iframe {
   padding: 0px;
+}
+
+.no-pad{
+  height: 50px;
+  padding-top: 0px !important;
 }
