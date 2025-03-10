@@ -187,11 +187,11 @@ svg {
 
 @keyframes svg-glow {
   from {
-    filter: drop-shadow(0 0 3px rgb(0, 88, 116)) drop-shadow(0 0 6px rgb(0, 88, 116)) drop-shadow(0 0 8px rgb(248, 178, 83));
+    filter: drop-shadow(0 0 6px rgb(0, 88, 116)) drop-shadow(0 0 10px rgb(0, 88, 116)) drop-shadow(0 0 13px rgb(248, 178, 83));
   }
 
   to {
-    filter: drop-shadow(0 0 4px rgb(248, 178, 83)) drop-shadow(0 0 6px rgb(0, 88, 116)) drop-shadow(0 0 10px rgb(0, 88, 116));
+    filter: drop-shadow(0 0 7px rgb(248, 178, 83)) drop-shadow(0 0 10px rgb(0, 88, 116)) drop-shadow(0 0 15px rgb(0, 88, 116));
   }
 }
 
@@ -438,7 +438,6 @@ svg {
 #cursoModalBody {
   font-weight: bold;
   color: white;
-  text-align: justify;
 }
 
 #cursoIconModal {
@@ -472,6 +471,15 @@ svg {
   align-content: center;
 }
 
-.p-contactos {
+.p-workshops {
+  font-size: 24px;
+  text-align: center;
+}
+
+.p-contactos, .p-workshops {
   color: white;
+}
+
+.iframe {
+  padding: 0px;
 }
