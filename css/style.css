@@ -159,6 +159,42 @@ main {
   place-content: center;
 }
 
+.title-cursos {
+  color: white;
+  margin-top: 10px;
+  font-size: 30px;
+  text-align: center;
+}
+
+svg {
+  padding-top: 3%;
+  width: 40%;
+  height: 40%;
+}
+
+.col-12.col-md-4 svg {
+  margin: 0 auto;
+  display: block;
+}
+
+.svg-shadow {
+  animation: svg-glow 1.5s ease-in-out infinite alternate;
+}
+
+.clickable-svg {
+  cursor: pointer;
+}
+
+@keyframes svg-glow {
+  from {
+    filter: drop-shadow(0 0 3px rgb(0, 88, 116)) drop-shadow(0 0 6px rgb(0, 88, 116)) drop-shadow(0 0 8px rgb(248, 178, 83));
+  }
+
+  to {
+    filter: drop-shadow(0 0 4px rgb(248, 178, 83)) drop-shadow(0 0 6px rgb(0, 88, 116)) drop-shadow(0 0 10px rgb(0, 88, 116));
+  }
+}
+
 /* Workshops */
 
 #workshops {
@@ -205,6 +241,7 @@ main {
   align-items: center;
   justify-content: center;
   flex-warp: warp;
+  padding: 0;
 }
 
 .container .card {
@@ -265,7 +302,7 @@ main {
   align-items : center;
   justify-content : center;
   flex-warp : warp;
-  padding : 30px;  
+  padding : 0;  
 }
 
 .container2 .card2 {
@@ -325,41 +362,6 @@ main {
   
 }
 
-.title-cursos {
-  color: white;
-  margin-top: 10px;
-  font-size: 30px;
-  text-align: center;
-}
-
-svg {
-  padding-top: 3%;
-  width: 40%;
-  height: 40%;
-}
-
-.col-12.col-md-4 svg {
-  margin: 0 auto;
-  display: block;
-}
-
-.svg-shadow {
-  animation: svg-glow 1.5s ease-in-out infinite alternate;
-}
-
-.clickable-svg {
-  cursor: pointer;
-}
-
-@keyframes svg-glow {
-  from {
-    filter: drop-shadow(0 0 3px rgb(0, 88, 116)) drop-shadow(0 0 6px rgb(0, 88, 116)) drop-shadow(0 0 8px rgb(248, 178, 83));
-  }
-
-  to {
-    filter: drop-shadow(0 0 4px rgb(248, 178, 83)) drop-shadow(0 0 6px rgb(0, 88, 116)) drop-shadow(0 0 10px rgb(0, 88, 116));
-  }
-}
 
 /* FOOTER */
 
