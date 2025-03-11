@@ -473,16 +473,13 @@ svg {
   transform: scale(1.1);
 }
 
-/* Responsive adjustments */
 @media (max-width: 991.98px) {
-  /* On medium and small screens */
   .footer {
     padding: 20px 0;
   }
 }
 
 @media (max-width: 575.98px) {
-  /* On very small screens */
   .icon-redes, .icon-apoios {
     max-width: 25px;
     max-height: 22px;
@@ -490,6 +487,9 @@ svg {
   }
 }
 
+.social-media {
+  place-items: center;
+}
 /* MODAL */
 
 .modal-content {
