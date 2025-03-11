@@ -208,8 +208,26 @@ svg {
   place-content: center;
 }
 
+@keyframes rotateZ {
+  from {
+      transform: scale(0.3) rotateZ(0deg);
+  }
+  to {
+      transform: scale(0.3) rotateZ(360deg);
+  }
+}
+
+#blender:hover {
+  animation: rotacaoY 2s linear infinite;
+}
+
 #unity {
   transform: scale(0.3);
+  transition: transform 0.5s ease;
+}
+
+#unity:hover {
+  animation: rotateZ 2s linear infinite;
 }
 
 .p-workshops {
