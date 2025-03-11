@@ -22,9 +22,10 @@ function mostrarCursoInfo(curso) {
         if (originalSvg) {
             const svgClone = originalSvg.cloneNode(true);
             svgClone.removeAttribute("id");
+            svgClone.removeAttribute("onclick");
             svgClone.setAttribute("width", "100%");
             svgClone.setAttribute("height", "auto");
-            svgClone.classList.remove("svg-shadow");  
+            svgClone.classList.add("svg-shadow");
 
             const modalSvgContainer = document.getElementById('cursoModalSvgContainer');
             modalSvgContainer.innerHTML = "";
