@@ -744,3 +744,7 @@ svg {
   transition: all 0.3s ease-in-out;
   transform: scale(1.2);
 }
+
+.centra {
+  justify-content: center;
+}
