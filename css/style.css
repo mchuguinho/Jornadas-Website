@@ -112,6 +112,7 @@ main {
   from {
     transform: rotateY(0deg);
   }
+
   to {
     transform: rotateY(360deg);
   }
@@ -121,6 +122,7 @@ main {
   from {
     transform: rotateZ(0deg);
   }
+
   to {
     transform: rotateZ(360deg);
   }
@@ -206,7 +208,7 @@ svg {
   place-content: center;
 }
 
-#unity{
+#unity {
   transform: scale(0.3);
 }
 
@@ -214,7 +216,6 @@ svg {
   font-size: 24px;
   text-align: center;
 }
-
 
 #title-workshops {
   font-weight: bold;
@@ -302,34 +303,34 @@ svg {
 }
 
 .container2 {
-  position : relative;
-  display : flex;
-  align-items : center;
-  justify-content : center;
-  flex-wrap : wrap;
-  padding : 0;  
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
 }
 
 .container2 .card2 {
   position: relative;
-  max-width : 300px;
-  height : 255px;  
-  background-color : #fff;
-  margin : 30px 10px;
-  padding : 20px 15px;
-  display : flex;
-  flex-direction : column;
-  box-shadow : 0 5px 20px rgba(0,0,0,0.5);
-  transition : 0.3s ease-in-out;
-  border-radius : 15px;
+  max-width: 300px;
+  height: 255px;
+  background-color: #fff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+  border-radius: 15px;
 }
 
 .container2 .card2:hover {
-  height : 500px;    
+  height: 500px;
 }
 
 .container2 .card2 .image2 {
-  position : relative;
+  position: relative;
   top: -5%;
   right: 7px;
   transform: scale(0.4);
@@ -337,8 +338,8 @@ svg {
 }
 
 .container2 .card2 .image2 img {
-  max-width : 100%;
-  border-radius : 15px;
+  max-width: 100%;
+  border-radius: 15px;
 }
 
 .container2 .card2:hover .image2 {
@@ -346,31 +347,78 @@ svg {
 }
 
 .container2 .card2 .content2 {
-  position : relative;
-  top : -37%;
-  padding : 10px 15px;
-  color : #111;
-  text-align : center;
-  
-  visibility : hidden;
-  opacity : 0;
-  transition : 0.3s ease-in-out;
-    
+  position: relative;
+  top: -37%;
+  padding: 10px 15px;
+  color: #111;
+  text-align: center;
+
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+
 }
 
 .container2 .card2:hover .content2 {
-   margin-top : 30px;
-   visibility : visible;
-   opacity : 1;
-   transition-delay: 0.2s;
-  
+  margin-top: 30px;
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.2s;
+
 }
 
-.icon-workshop{
+.icon-workshop {
   animation: rotacaoZ 5s linear infinite;
   transform-style: preserve-3d;
   display: block;
   perspective: 1000px;
+}
+
+/* Projetos */
+
+#projetos {
+  margin: 0 auto;
+  place-content: center;
+}
+
+#title-projetos {
+  font-weight: bold;
+  color: white;
+  text-align: center;
+}
+
+.p-projetos {
+  font-size: 24px;
+  text-align: center;
+  color: white;
+}
+
+.topicos-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  padding: 20px;
+  color: rgb(248, 178, 83);
+  font-family: Nexa;
+  font-weight: bold;
+}
+
+.topico {
+  background-color: rgb(248, 178, 83);
+  color: white;
+  padding: 10px 15px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+  transition: 0.3s;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.topico:hover {
+  background-color: rgb(248, 178, 83);
 }
 
 /* FOOTER */
@@ -495,7 +543,8 @@ svg {
   align-content: center;
 }
 
-.p-contactos, .p-workshops {
+.p-contactos,
+.p-workshops {
   color: white;
 }
 
@@ -503,7 +552,7 @@ svg {
   padding: 0px;
 }
 
-.no-pad{
+.no-pad {
   height: 50px;
   padding-top: 0px !important;
 }
