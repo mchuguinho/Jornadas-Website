@@ -38,5 +38,35 @@ function mostrarCursoInfo(curso) {
     }
 }
 
+// Atualiza o ano no footer sempre que a página é carregada
 const d = new Date();
 document.getElementById("ano").innerHTML = d.getFullYear();
+
+// Carrega o CSS dinamicamente
+function callUnity() {
+    const existingLink = document.getElementById("dynamic-css");
+    
+    if (existingLink) {
+        existingLink.remove(); // Remove o CSS se já existir
+    } else {
+        const link = document.createElement("link");
+        link.id = "dynamic-css";
+        link.rel = "stylesheet";
+        link.href = "css/unity.css";
+        document.head.appendChild(link);
+    }
+}
+
+function callBlender() {
+    const existingLink = document.getElementById("dynamic-css");
+    
+    if (existingLink) {
+        existingLink.remove(); // Remove o CSS se já existir
+    } else {
+        const link = document.createElement("link");
+        link.id = "dynamic-css";
+        link.rel = "stylesheet";
+        link.href = "css/blender.css";
+        document.head.appendChild(link);
+    }
+}
