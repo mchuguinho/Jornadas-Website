@@ -1,3 +1,6 @@
+// Autor: Hugo Diniz e Eduardo Couto
+// Armazena as informações de cada curso e do núcleo para posteriormente apresentá-las no modal
+
 function mostrarCursoInfo(curso) {
     const cursoInfo = {
         ecgm: {
@@ -44,7 +47,7 @@ const d = new Date();
 document.getElementById("ano").innerHTML = d.getFullYear();
 
 // Carrega o CSS dinamicamente
-function callUnity() {
+function openWorkshop() {
     const existingLink = document.getElementById("dynamic-css");
     
     if (existingLink) {
@@ -53,21 +56,7 @@ function callUnity() {
         const link = document.createElement("link");
         link.id = "dynamic-css";
         link.rel = "stylesheet";
-        link.href = "css/unity.css";
-        document.head.appendChild(link);
-    }
-}
-
-function callBlender() {
-    const existingLink = document.getElementById("dynamic-css");
-    
-    if (existingLink) {
-        existingLink.remove(); // Remove o CSS se já existir
-    } else {
-        const link = document.createElement("link");
-        link.id = "dynamic-css";
-        link.rel = "stylesheet";
-        link.href = "css/blender.css";
+        link.href = "css/workshops.css";
         document.head.appendChild(link);
     }
 }
