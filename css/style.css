@@ -559,7 +559,7 @@ svg {
   padding-top: 0px !important;
 }
 
-.clickable-svg:hover {
+.svg-scale:hover {
   transition: all 0.3s ease-in-out;
   transform: scale(1.2);
 }
