@@ -360,6 +360,14 @@ svg {
 
 /* Projetos */
 
+.author-projetos, .header-projetos {
+  color: white;
+}
+
+.header-projetos {
+  font-weight: bold;
+}
+
 #projetos {
   margin: 0 auto;
   place-content: center;
@@ -433,6 +441,12 @@ svg {
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
 }
+
+.portfolio-item {
+  transition: opacity 0.5s ease-in-out;
+  opacity: 1;
+}
+
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
