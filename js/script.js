@@ -60,3 +60,45 @@ function openWorkshop() {
         document.head.appendChild(link);
     }
 }
+
+// Filtra os projetos de acordo com a categoria selecionada
+document.addEventListener("DOMContentLoaded", function () {
+    const filterLinks = document.querySelectorAll("#projetos .nav-link");
+    const projects = document.querySelectorAll(".portfolio-item");
+
+    const filterMap = {
+        "Todos": "todos",
+        "Programação": "filter-programacao",
+        "Modelação 3D": "filter-modelacao",
+        "Programação Web": "filter-web",
+        "Unity 3D": "filter-unity",
+        "Animação": "filter-animacao",
+        "Aplicações": "filter-aplicacao"
+    };
+
+    filterLinks.forEach(link => {
+        link.addEventListener("click", function (event) {
+            event.preventDefault();
+
+            const filterText = this.textContent.trim();
+            const filterClass = filterMap[filterText];
+
+            projects.forEach(project => {
+                project.style.opacity = "0";
+                setTimeout(() => {
+                    if (filterClass === "todos" || project.classList.contains(filterClass)) {
+                        project.style.display = "block";
+                        setTimeout(() => {
+                            project.style.opacity = "1";
+                        }, 100);
+                    } else {
+                        project.style.display = "none";
+                    }
+                }, 300);
+            });
+        });
+    });
+});
+
+
+
