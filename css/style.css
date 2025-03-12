@@ -168,6 +168,7 @@ main {
 .title-cursos {
   color: white;
   margin-top: 10px;
+  font-size: 30px;
   text-align: center;
 }
 
@@ -359,14 +360,6 @@ svg {
 
 /* Projetos */
 
-.author-projetos, .header-projetos {
-  color: white;
-}
-
-.header-projetos {
-  font-weight: bold;
-}
-
 #projetos {
   margin: 0 auto;
   place-content: center;
@@ -411,7 +404,6 @@ svg {
 .topico:hover {
   background-color: rgb(248, 178, 83);
 }
-
 .image-container {
   position: relative;
   display: inline-block;
@@ -429,7 +421,7 @@ svg {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  background-color: rgb(248, 178, 83);
+  background-color: #ff6600;
   color: white;
   border: none;
   padding: 12px 24px;
@@ -505,12 +497,6 @@ svg {
 .portfolio #portfolio-flters li:last-child {
   margin-right: 0;
 }
-
-.portfolio-item {
-  transition: opacity 0.5s ease-in-out;
-  opacity: 1;
-}
-
 .portfolio .portfolio-item {
   margin-bottom: 30px;
 }
@@ -808,8 +794,4 @@ svg {
 .svg-scale:hover {
   transition: all 0.3s ease-in-out;
   transform: scale(1.2);
-}
-
-.centra {
-  justify-content: center;
 }
