@@ -167,10 +167,19 @@ main {
   place-content: center;
 }
 
+.programa-center {
+  text-align: center;
+}
+
 #title-programa {
   font-weight: bold;
   color: white;
   text-align: center;
+}
+
+.biblioteca {
+  position: relative;
+  top: -4.6%;
 }
 
 
@@ -670,9 +679,9 @@ svg {
   left: 0;
   bottom: 0;
   width: 100%;
-  padding: 15px 0;
   background-image: linear-gradient(rgba(32, 36, 36, 0.6), black);
   color: rgb(248, 178, 83);
+  padding: 5px 0;
 }
 
 .footer-container {
@@ -829,6 +838,6 @@ svg {
 }
 
 .no-pad {
-  height: 40px;
+  height: 38px;
   padding-top: 0px !important;
 }
