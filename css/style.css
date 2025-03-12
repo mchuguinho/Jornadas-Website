@@ -738,6 +738,7 @@ svg {
     0px 10px 0px rgba(248, 178, 83, 0.6), 
     8px 8px 20px rgba(0, 0, 0, 0.7), 
     inset -3px -3px 10px rgba(0, 0, 0, 0.4);
+  width: auto;
 }
 
 .modal-content:hover {
