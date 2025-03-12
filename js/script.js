@@ -46,8 +46,10 @@ function mostrarCursoInfo(curso) {
 */
 
 // Atualiza o ano no footer sempre que a página é carregada
-const d = new Date();
-document.getElementById("ano").innerHTML = d.getFullYear();
+window.onload = function() {
+    const d = new Date();
+    document.getElementById("ano").textContent = d.getFullYear();
+};
 
 // Carrega o CSS dinamicamente
 function openWorkshop() {

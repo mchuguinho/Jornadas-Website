@@ -166,10 +166,19 @@ main {
   place-content: center;
 }
 
+.programa-center {
+  text-align: center;
+}
+
 #title-programa {
   font-weight: bold;
   color: white;
   text-align: center;
+}
+
+.biblioteca {
+  position: relative;
+  top: -4.6%;
 }
 
 
@@ -448,6 +457,7 @@ svg {
   transition: opacity 0.3s ease;
 }
 
+
 .view-more {
   position: absolute;
   top: 35%;
@@ -490,7 +500,6 @@ svg {
   padding: 20px;
   border-radius: 10px;
   width: 50%;
-  text-align: center;
   position: relative;
 }
 
@@ -524,6 +533,12 @@ svg {
 .portfolio-item {
   transition: opacity 0.3s ease-in-out;
   opacity: 1;
+}
+
+.portfolio-item img {
+  height: 250px;
+  object-fit: cover;
+  width: 100%;
 }
 
 .portfolio #portfolio-flters li {
@@ -670,50 +685,51 @@ svg {
 }
 
 /* FOOTER */
-
 .footer {
   position: relative;
   left: 0;
   bottom: 0;
   width: 100%;
-  padding: 15px 0;
   background-image: linear-gradient(rgba(32, 36, 36, 0.6), black);
   color: rgb(248, 178, 83);
+  padding: 5px 0;
 }
 
-.footer-text {
+.footer-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 15px 0;
+}
+
+.footer-text, #curso-ecgm {
   font-weight: bold;
-  margin-bottom: 5px !important;
-}
-
-.border {
-  border: none !important;
-  margin: 0 10px;
-}
-
-#curso-ecgm {
-  font-weight: bold;
-  font-size: 1rem;
   margin: 0;
 }
 
-#ncgm-icon {
-  width: 60px;
-  height: 20px;
+.footer-text-container {
+  flex: 1;
+  text-align: left;
 }
 
-#ncgm-icon:hover {
-  cursor: pointer;
+.footer-links {
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
-.icon-cursos:hover {
-  cursor: pointer;
+
+.social-media, .apoios {
+  display: flex;
+  align-items: center;
+  gap: 15px;
 }
 
 .icon-redes, .icon-apoios {
   max-width: 28px;
   max-height: 24px;
-  margin: 0 4px;
   transition: transform 0.2s ease-in-out;
 }
 
@@ -721,23 +737,23 @@ svg {
   transform: scale(1.1);
 }
 
-@media (max-width: 991.98px) {
-  .footer {
-    padding: 20px 0;
+@media (max-width: 768px) {
+  .footer-container {
+      flex-direction: column;
+      text-align: center;
+  }
+
+  .footer-text-container {
+      text-align: center;
+      margin-bottom: 10px;
+  }
+
+  .footer-links {
+      flex-direction: column;
+      gap: 20px;
   }
 }
 
-@media (max-width: 575.98px) {
-  .icon-redes, .icon-apoios {
-    max-width: 25px;
-    max-height: 22px;
-    margin: 0 3px;
-  }
-}
-
-.social-media {
-  place-items: center;
-}
 
 /* MODAL */
 
@@ -833,11 +849,6 @@ svg {
 }
 
 .no-pad {
-  height: 30px;
+  height: 38px;
   padding-top: 0px !important;
-}
-
-.svg-scale:hover {
-  transition: all 0.3s ease-in-out;
-  transform: scale(1.2);
 }
