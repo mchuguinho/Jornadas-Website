@@ -181,6 +181,11 @@ main {
   place-content: center;
 }
 
+.centra {
+  margin: 0 auto;
+  place-content: center;
+}
+
 .title-cursos {
   color: white;
   margin-top: 10px;
