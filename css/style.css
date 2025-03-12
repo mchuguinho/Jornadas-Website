@@ -17,29 +17,45 @@
 
 /* PÁGINA GERAL */
 
-html,
-body {
+html, body {
+  width: 100%;
   height: 100%;
   margin: 0;
   padding: 0;
-  padding-top: 1.3%;
+  overflow-x: hidden;
 }
 
 body {
+  position: relative;
   display: flex;
   flex-direction: column;
+  min-height: 100vh;
+}
+
+.bg-fixed::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
   background-image: url("../assets/icons/background_gauss.png");
-  background-attachment: fixed;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  min-height: 100vh;
-  flex-direction: column;
+  z-index: -1;
+  transform: translateZ(0);
 }
+
+@supports (-webkit-touch-callout: none) {
+  .bg-fixed::before {
+      background-attachment: scroll !important;
+  }
+}
+
 
 main {
   flex: 1;
-  /* Faz com que o conteúdo ocupe o espaço disponível */
   padding: 20px;
 }
 
@@ -469,6 +485,15 @@ svg {
   cursor: pointer;
 }
 
+.header-projetos {
+  font-weight: bold;
+  color: white;
+}
+
+.author-projetos {
+  color: white;
+}
+
 .portfolio #portfolio-flters {
   padding: 0;
   margin: 0 auto 15px auto;
@@ -478,6 +503,12 @@ svg {
   padding: 2px 15px;
   color: white;
 }
+
+.portfolio-item {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+
 .portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
@@ -707,6 +738,7 @@ svg {
     0px 10px 0px rgba(248, 178, 83, 0.6), 
     8px 8px 20px rgba(0, 0, 0, 0.7), 
     inset -3px -3px 10px rgba(0, 0, 0, 0.4);
+  width: auto;
 }
 
 .modal-content:hover {
