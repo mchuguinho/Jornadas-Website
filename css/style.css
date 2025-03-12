@@ -733,7 +733,6 @@ svg {
   position: relative;
   padding: 15px;
   transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
-  transform: perspective(800px) rotateX(0deg) rotateY(0deg);
   box-shadow: 
     0px 10px 0px rgba(248, 178, 83, 0.6), 
     8px 8px 20px rgba(0, 0, 0, 0.7), 
@@ -746,7 +745,6 @@ svg {
     0px 8px 0px rgba(248, 178, 83, 0.5), 
     5px 5px 15px rgba(0, 0, 0, 0.6),        
     inset -3px -3px 8px rgba(0, 0, 0, 0.3); 
-  transform: perspective(800px) rotateX(8deg) rotateY(-5deg);
 }
 
 .modal-content::before {
@@ -763,13 +761,13 @@ svg {
   clip-path: inset(0px 0px -6px 0px);
 }
 
-#cursoModalLabel {
+#cursoModalLabel, #portfolioModalLabel {
   font-weight: bold;
   color: rgba(248, 178, 83, 1);
   text-shadow: 2px 2px 5px rgba(248, 178, 83, 0.5);
 }
 
-#cursoModalBody {
+#cursoModalBody, #portfolioModalBody {
   font-weight: bold;
   color: white;
   text-shadow: 1px 1px 3px rgba(255, 255, 255, 0.2);

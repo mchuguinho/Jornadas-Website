@@ -100,5 +100,29 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+// Modal para os portfolio itens
+function mostrarProjetoInfo(titulo, autores, mediaSrc) {
+    document.getElementById('portfolioModalLabel').innerText = titulo;
+    document.getElementById('portfolioModalBody').innerText = "Autor(es): " + autores;
 
+    const modalImageContainer = document.getElementById('portfolioModalImageContainer');
+    modalImageContainer.innerHTML = '';
+
+    if (mediaSrc) {
+        const isVideo = mediaSrc.endsWith('.mp4') || mediaSrc.endsWith('.webm') || mediaSrc.endsWith('.ogg');
+        
+        if (isVideo) {
+            modalImageContainer.innerHTML = `
+                <video controls class="img-fluid">
+                    <source src="${mediaSrc}" type="video/mp4">
+                    O seu navegador não suporta vídeos.
+                </video>`;
+        } else {
+            modalImageContainer.innerHTML = `<img src="${mediaSrc}" class="img-fluid" alt="Imagem do projeto">`;
+        }
+    }
+
+    var modal = new bootstrap.Modal(document.getElementById('portfolioModal'));
+    modal.show();
+}
 
