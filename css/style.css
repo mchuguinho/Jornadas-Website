@@ -37,6 +37,12 @@ body {
   flex-direction: column;
 }
 
+@supports (-webkit-overflow-scrolling: touch) {
+  body {
+      background-attachment: scroll;
+  }
+}
+
 main {
   flex: 1;
   /* Faz com que o conteúdo ocupe o espaço disponível */
@@ -478,6 +484,12 @@ svg {
   padding: 2px 15px;
   color: white;
 }
+
+.portfolio-item {
+  transition: opacity 0.3s ease-in-out;
+  opacity: 1;
+}
+
 .portfolio #portfolio-flters li {
   cursor: pointer;
   display: inline-block;
