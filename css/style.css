@@ -829,11 +829,6 @@ svg {
 }
 
 .no-pad {
-  height: 50px;
+  height: 40px;
   padding-top: 0px !important;
-}
-
-.svg-scale:hover {
-  transition: all 0.3s ease-in-out;
-  transform: scale(1.2);
 }
