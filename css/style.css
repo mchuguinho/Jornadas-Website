@@ -53,7 +53,6 @@ body {
   }
 }
 
-
 main {
   flex: 1;
   padding: 20px;
@@ -179,6 +178,18 @@ main {
 #informacao {
   margin: 0 auto;
   place-content: center;
+}
+
+#ecgm {
+    transform: scale(0.7);
+}
+
+#dwm {
+  transform: scale(1.5);
+}
+
+#ncgm {
+  transform: scale(1.2);
 }
 
 .centra {
@@ -822,7 +833,7 @@ svg {
 }
 
 .no-pad {
-  height: 50px;
+  height: 30px;
   padding-top: 0px !important;
 }
 

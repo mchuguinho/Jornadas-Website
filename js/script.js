@@ -1,6 +1,7 @@
 // Autor: Hugo Diniz e Eduardo Couto
 // Armazena as informações de cada curso e do núcleo para posteriormente apresentá-las no modal
 
+/*
 function mostrarCursoInfo(curso) {
     const cursoInfo = {
         ecgm: {
@@ -16,6 +17,7 @@ function mostrarCursoInfo(curso) {
             description: 'O Núcleo da Computação Gráfica e Multimédia (NCGM) é composto por um grupo de estudantes de Engenharia da Computação Gráfica e Multimédia e do CTeSP de Desenvolvimento Web e Multimédia da Escola Superior de Tecnologias e Gestão (ESTG), que tem como objetivo principal representar e promover ambos os cursos. Além disso, o mesmo procura organizar atividades de conteúdos variados com o fundamento de complementar os cursos para que a experiência académica de cada estudante seja ainda mais rica.',
         }
     };
+
 
     if (cursoInfo[curso]) {
         document.getElementById('cursoModalLabel').innerText = cursoInfo[curso].title;
@@ -41,6 +43,7 @@ function mostrarCursoInfo(curso) {
         console.error('Curso não encontrado:', curso);
     }
 }
+*/
 
 // Atualiza o ano no footer sempre que a página é carregada
 const d = new Date();
@@ -57,6 +60,20 @@ function openWorkshop() {
         link.id = "dynamic-css";
         link.rel = "stylesheet";
         link.href = "css/workshops.css";
+        document.head.appendChild(link);
+    }
+}
+
+function openInfo() {
+    const existingLink = document.getElementById("dynamic-css");
+    
+    if (existingLink) {
+        existingLink.remove(); // Remove o CSS se já existir
+    } else {
+        const link = document.createElement("link");
+        link.id = "dynamic-css";
+        link.rel = "stylesheet";
+        link.href = "css/info.css";
         document.head.appendChild(link);
     }
 }
