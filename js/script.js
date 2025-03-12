@@ -73,7 +73,8 @@ document.addEventListener("DOMContentLoaded", function () {
         "Programação Web": "filter-web",
         "Unity 3D": "filter-unity",
         "Animação": "filter-animacao",
-        "Aplicações": "filter-aplicacao"
+        "Aplicações": "filter-aplicacao",
+        "Jogáveis": "filter-jogaveis"
     };
 
     filterLinks.forEach(link => {
