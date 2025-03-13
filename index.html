@@ -82,75 +82,51 @@
         </div>
 
         <!-- Secção de Informação-->
-        <div class="row pt-5 centra" id="workshops">
+        <div class="row pt-5 centra" id="informacao">
             <div class="row">
                 <div class="col-12 bg-dark">
-                    <h1 id="title-workshops" class="pt-2 pb-2"></h1>
-                    <p class="p-workshops">Clique nos cursos para mais informações.</p>
+                    <h1 id="info" class="pt-2 pb-2">Informações</h1>
+                    <p class="p-workshops">Passe/clique nos ícones para mais informações.</p>
                 </div>
             </div>
             <div class="row">
-                <div class="col-12 col-md-4 bg-dark container">
-                    <div class="card" onclick="openInfo()">
-                        <div class="image pt-3">
-                            <img id="ecgm" class="clickable-svg" src="assets/cursos/SVG/ecgm.svg">
+                <div class="col-12 col-md-4 bg-dark container3">
+                    <div class="card3">
+                        <div class="image3 pt-3">
+                            <img id="ecgm" class="clickable-svg svg-shadow" src="assets/cursos/SVG/ecgm.svg">
                         </div>
-                        <div class="content">
-                            <h3 class="titleWorkshopsUnity">ECGM</h3>
-                            <p class="textoUnity">A Licenciatura em Engenharia da Computação Gráfica e Multimédia forma
+                        <div class="content3">
+                            <h3 class="titleECGM">ECGM</h3>
+                            <p class="textoECGM">A Licenciatura em Engenharia da Computação Gráfica e Multimédia forma
                                 profissionais qualificados para um setor em crescimento, com uma abordagem
-                                interdisciplinar e forte componente prática. O curso garante domínio de conceitos,
-                                tecnologias e metodologias de trabalho alinhadas com o mercado. Recentemente, foi
-                                acreditado pela A3ES e registado na OET, integrando o Colégio de Especialidade de
-                                Engenharia Informática.</p>
+                                interdisciplinar e forte componente prática.</p>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-12 col-md-4 bg-dark container2">
-                    <div class="card2" onclick="openInfo()">
-                        <div class="image2">
-                            <img id="dwm" class="clickable-svg" src="assets/cursos/SVG/dwm.svg">
+        
+                <div class="col-12 col-md-4 bg-dark container4">
+                    <div class="card4">
+                        <div class="image4 pt-3">
+                            <img id="dwm" class="clickable-svg svg-shadow" src="assets/cursos/SVG/dwm.svg">
                         </div>
-                        <div class="content2">
-                            <h3 class="titleWorkshopsBlender">DWM</h3>
-                            <p class="textoBlender">O CTeSP em Desenvolvimento Web e Multimédia forma técnicos para
-                                criar e gerir soluções web e conteúdos multimédia. Os formados podem prosseguir estudos
-                                em licenciaturas, tais como Engenharia da Computação Gráfica e Multimédia ou Engenharia
-                                Informática
-                                da ESTG/IPVC sem prova de ingresso.</p>
+                        <div class="content4">
+                            <h3 class="titleDWM">DWM</h3>
+                            <p class="textoDWM">O CTeSP em Desenvolvimento Web e Multimédia forma técnicos para
+                                criar e gerir soluções web e conteúdos multimédia.</p>
                         </div>
                     </div>
                 </div>
-
-                <div class="col-12 col-md-4 bg-dark container2">
-                    <div class="card2" onclick="openInfo()">
-                        <div class="image2">
-                            <img id="ncgm" class="clickable-svg" src="assets/cursos/SVG/ncgm.svg">
+        
+                <div class="col-12 col-md-4 bg-dark container5">
+                    <div class="card5">
+                        <div class="image5 pt-3">
+                            <img id="ncgm" class="clickable-svg svg-shadow" src="assets/cursos/SVG/ncgm.svg">
                         </div>
-                        <div class="content2">
-                            <h3 class="titleWorkshopsBlender">NCGM</h3>
-                            <p class="textoBlender">O Núcleo da Computação Gráfica e Multimédia (NCGM) reúne estudantes
-                                da ESTG da licenciatura de ECGM e do CTeSP de DWM para representar e promover os cursos,
-                                organizando atividades que enriquecem a experiência académica.</p>
+                        <div class="content5">
+                            <h3 class="titleNCGM">NCGM</h3>
+                            <p class="textoNCGM">O Núcleo da Computação Gráfica e Multimédia (NCGM) reúne estudantes
+                                da ESTG da licenciatura de ECGM e do CTeSP de DWM.</p>
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <!-- Modal infos -->
-        <div class="modal fade" id="cursoModal" tabindex="-1" aria-labelledby="cursoModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="cursoModalLabel">Detalhes do Curso</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-                    </div>
-                    <div class="modal-body">
-                        <div id="cursoModalSvgContainer" class="text-center">
-                        </div>
-                        <p id="cursoModalBody"></p>
                     </div>
                 </div>
             </div>
@@ -161,12 +137,12 @@
             <div class="row">
                 <div class="col-12 bg-dark">
                     <h1 id="title-workshops" class="pt-2 pb-2">Workshops</h1>
-                    <p class="p-workshops">Clique nos ícones para mais informações.</p>
+                    <p class="p-workshops">Passe/clique nos ícones para mais informações acerca dos Workshops.</p>
                 </div>
             </div>
             <div class="row">
                 <div class="col-12 col-md-6 bg-dark container">
-                    <div class="card" onclick="openWorkshop()">
+                    <div class="card">
                         <div class="image pt-3">
                             <img id="unity" class="clickable-svg" src="assets/icons/SVG/Unity.svg">
                         </div>
@@ -185,7 +161,7 @@
                 </div>
 
                 <div class="col-12 col-md-6 bg-dark container2">
-                    <div class="card2" onclick="openWorkshop()">
+                    <div class="card2">
                         <div class="image2">
                             <img id="blender" class="clickable-svg" src="assets/icons/SVG/Blender.svg">
                         </div>
