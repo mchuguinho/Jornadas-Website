@@ -120,18 +120,21 @@ document.addEventListener("DOMContentLoaded", function () {
 function playVideo(element) {
     const img = element.querySelector("img");
     const video = element.querySelector("video");
-    img.style.display = "none";
-    video.style.display = "block";
+    
+    img.style.opacity = "0";
+    video.style.opacity = "1"
     video.play();
 }
 
 function stopVideo(element) {
     const img = element.querySelector("img");
     const video = element.querySelector("video");
+
     video.pause();
     video.currentTime = 0;
-    video.style.display = "none";
-    img.style.display = "block";
+
+    img.style.opacity = "1";
+    video.style.opacity = "0";
 }
 
 /* 
