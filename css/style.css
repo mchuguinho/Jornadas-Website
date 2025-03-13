@@ -466,10 +466,10 @@ main {
 
 @keyframes rotateZ {
   from {
-    transform: scale(0.3) rotateZ(0deg);
+    transform: rotateZ(0deg);
   }
   to {
-    transform: scale(0.3) rotateZ(360deg);
+    transform: rotateZ(360deg);
   }
 }
 
@@ -478,7 +478,6 @@ main {
 }
 
 #unity {
-  transform: scale(0.3);
   transition: transform 0.5s ease;
 }
 
@@ -540,18 +539,19 @@ main {
 
 .container .card .image {
   position: relative;
-  top: -55%;
+  top: 20%;
   z-index: 1;
+  align-self: center;
   transition: top 0.3s ease-in-out;
 }
 
 .container .card:hover .image {
-  top: -32%;
+  top: 0;
 }
 
 .container .card .content {
   position: relative;
-  top: -310px;
+  top: -20px;
   padding: 10px 15px;
   color: white;
   text-align: center;
@@ -561,7 +561,7 @@ main {
 }
 
 .container .card:hover {
-  height: 500px;
+  height: 470px;
 }
 
 .container .card:hover .content {
@@ -596,9 +596,9 @@ main {
 
 .container2 .card2 .image2 {
   position: relative;
-  top: -23%;
+  top: 30%;
   right: 7px;
-  transform: scale(0.4);
+  align-self: center;
   transition: top 0.3s ease-in-out;
 }
 
@@ -608,7 +608,7 @@ main {
 
 .container2 .card2 .content2 {
   position: relative;
-  top: -180px;
+  top: -20px;
   padding: 10px 15px;
   color: white;
   text-align: center;
@@ -617,13 +617,12 @@ main {
   transition: 0.3s ease-in-out;
 }
 
-
 .container2 .card2:hover {
-  height: 500px;
+  height: 470px;
 }
 
 .container2 .card2:hover .image2 {
-  top: -17%;
+  top: 0;
 }
 
 .container2 .card2:hover .content2 {
