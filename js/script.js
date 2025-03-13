@@ -1,6 +1,17 @@
 // Autor: Hugo Diniz e Eduardo Couto
 // Armazena as informações de cada curso e do núcleo para posteriormente apresentá-las no modal
 
+// Carrega a imagem de fundo de forma assíncrona
+document.addEventListener("DOMContentLoaded", function () {
+  const bgImage = new Image();
+  bgImage.src = "assets/icons/background_gauss.png";
+
+  bgImage.onload = function () {
+    document.getElementById("loader").style.display = "none"; // Remove o loader
+    document.body.style.opacity = "1"; // Exibe o site
+  };
+});
+
 /*
 function mostrarCursoInfo(curso) {
     const cursoInfo = {
@@ -46,95 +57,98 @@ function mostrarCursoInfo(curso) {
 */
 
 // Atualiza o ano no footer sempre que a página é carregada
-window.onload = function() {
-    const d = new Date();
-    document.getElementById("ano").textContent = d.getFullYear();
+window.onload = function () {
+  const d = new Date();
+  document.getElementById("ano").textContent = d.getFullYear();
 };
 
 // Carrega o CSS dinamicamente
 function openWorkshop() {
-    const existingLink = document.getElementById("dynamic-css");
-    
-    if (existingLink) {
-        existingLink.remove(); // Remove o CSS se já existir
-    } else {
-        const link = document.createElement("link");
-        link.id = "dynamic-css";
-        link.rel = "stylesheet";
-        link.href = "css/workshops.css";
-        document.head.appendChild(link);
-    }
+  const existingLink = document.getElementById("dynamic-css");
+
+  if (existingLink) {
+    existingLink.remove(); // Remove o CSS se já existir
+  } else {
+    const link = document.createElement("link");
+    link.id = "dynamic-css";
+    link.rel = "stylesheet";
+    link.href = "css/workshops.css";
+    document.head.appendChild(link);
+  }
 }
 
 function openInfo() {
-    const existingLink = document.getElementById("dynamic-css");
-    
-    if (existingLink) {
-        existingLink.remove(); // Remove o CSS se já existir
-    } else {
-        const link = document.createElement("link");
-        link.id = "dynamic-css";
-        link.rel = "stylesheet";
-        link.href = "css/info.css";
-        document.head.appendChild(link);
-    }
+  const existingLink = document.getElementById("dynamic-css");
+
+  if (existingLink) {
+    existingLink.remove(); // Remove o CSS se já existir
+  } else {
+    const link = document.createElement("link");
+    link.id = "dynamic-css";
+    link.rel = "stylesheet";
+    link.href = "css/info.css";
+    document.head.appendChild(link);
+  }
 }
 
 // Filtra os projetos de acordo com a categoria selecionada
 document.addEventListener("DOMContentLoaded", function () {
-    const filterLinks = document.querySelectorAll("#projetos .nav-link");
-    const projects = document.querySelectorAll(".portfolio-item");
+  const filterLinks = document.querySelectorAll("#projetos .nav-link");
+  const projects = document.querySelectorAll(".portfolio-item");
 
-    const filterMap = {
-        "Todos": "todos",
-        "Programação 3D": "filter-programacao3d",
-        "Programação Web": "filter-web",
-        "Interação": "filter-interacao",
-        "Animação": "filter-animacao"
-    };
+  const filterMap = {
+    Todos: "todos",
+    "Programação 3D": "filter-programacao3d",
+    "Programação Web": "filter-web",
+    Interação: "filter-interacao",
+    Animação: "filter-animacao",
+  };
 
-    filterLinks.forEach(link => {
-        link.addEventListener("click", function (event) {
-            event.preventDefault();
+  filterLinks.forEach((link) => {
+    link.addEventListener("click", function (event) {
+      event.preventDefault();
 
-            const filterText = this.textContent.trim();
-            const filterClass = filterMap[filterText];
+      const filterText = this.textContent.trim();
+      const filterClass = filterMap[filterText];
 
-            projects.forEach(project => {
-                project.style.opacity = "0";
-                setTimeout(() => {
-                    if (filterClass === "todos" || project.classList.contains(filterClass)) {
-                        project.style.display = "block";
-                        setTimeout(() => {
-                            project.style.opacity = "1";
-                        }, 100);
-                    } else {
-                        project.style.display = "none";
-                    }
-                }, 300);
-            });
-        });
+      projects.forEach((project) => {
+        project.style.opacity = "0";
+        setTimeout(() => {
+          if (
+            filterClass === "todos" ||
+            project.classList.contains(filterClass)
+          ) {
+            project.style.display = "block";
+            setTimeout(() => {
+              project.style.opacity = "1";
+            }, 100);
+          } else {
+            project.style.display = "none";
+          }
+        }, 300);
+      });
     });
+  });
 });
 
 function playVideo(element) {
-    const img = element.querySelector("img");
-    const video = element.querySelector("video");
-    
-    img.style.opacity = "0";
-    video.style.opacity = "1"
-    video.play();
+  const img = element.querySelector("img");
+  const video = element.querySelector("video");
+
+  img.style.opacity = "0";
+  video.style.opacity = "1";
+  video.play();
 }
 
 function stopVideo(element) {
-    const img = element.querySelector("img");
-    const video = element.querySelector("video");
+  const img = element.querySelector("img");
+  const video = element.querySelector("video");
 
-    video.pause();
-    video.currentTime = 0;
+  video.pause();
+  video.currentTime = 0;
 
-    img.style.opacity = "1";
-    video.style.opacity = "0";
+  img.style.opacity = "1";
+  video.style.opacity = "0";
 }
 
 /* 
