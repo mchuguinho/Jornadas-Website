@@ -247,7 +247,6 @@ main {
   position: relative;
   max-width: 300px;
   height: 255px;
-  background-color: #fff;
   margin: 30px 10px;
   padding: 20px 15px;
   display: flex;
@@ -278,7 +277,7 @@ main {
 .container3 .card3 .content3 {
   position: relative;
   padding: 10px 15px;
-  color: #111;
+  color: white;
   text-align: center;
   visibility: hidden;
   opacity: 0;
@@ -327,7 +326,6 @@ main {
   position: relative;
   max-width: 300px;
   height: 255px;
-  background-color: #fff;
   margin: 30px 10px;
   padding: 20px 15px;
   display: flex;
@@ -359,7 +357,7 @@ main {
   position: relative;
   top: -10%;
   padding: 10px 15px;
-  color: #111;
+  color: white;
   text-align: center;
   visibility: hidden;
   opacity: 0;
@@ -390,7 +388,6 @@ main {
   position: relative;
   max-width: 300px;
   height: 255px;
-  background-color: #fff;
   margin: 30px 10px;
   padding: 20px 15px;
   display: flex;
@@ -422,7 +419,7 @@ main {
   position: relative;
   top: -50px;
   padding: 10px 15px;
-  color: #111;
+  color: white;
   text-align: center;
   visibility: hidden;
   opacity: 0;
@@ -455,11 +452,11 @@ main {
 
 @keyframes svg-glow {
   from {
-    filter: drop-shadow(0 0 6px rgb(0, 88, 116)) drop-shadow(0 0 10px rgb(0, 88, 116)) drop-shadow(0 0 13px rgb(248, 178, 83));
+    filter: drop-shadow(0 0 3px rgb(0, 88, 116)) drop-shadow(0 0 5px rgb(0, 88, 116)) drop-shadow(0 0 7px rgb(248, 178, 83));
   }
 
   to {
-    filter: drop-shadow(0 0 7px rgb(248, 178, 83)) drop-shadow(0 0 10px rgb(0, 88, 116)) drop-shadow(0 0 15px rgb(0, 88, 116));
+    filter: drop-shadow(0 0 3px rgb(248, 178, 83)) drop-shadow(0 0 5px rgb(0, 88, 116)) drop-shadow(0 0 7px rgb(0, 88, 116));
   }
 }
 
@@ -534,7 +531,7 @@ main {
   position: relative;
   max-width: 300px;
   height: 255px;
-  background-color: #fff;
+  background-color: transparent;
   margin: 30px 10px;
   padding: 20px 15px;
   display: flex;
@@ -558,7 +555,7 @@ main {
   position: relative;
   top: -270px;
   padding: 10px 15px;
-  color: #111;
+  color: white;
   text-align: center;
   visibility: hidden;
   opacity: 0;
@@ -578,7 +575,6 @@ main {
   position: relative;
   max-width: 300px;
   height: 255px;
-  background-color: #fff;
   margin: 30px 10px;
   padding: 20px 15px;
   display: flex;
@@ -605,7 +601,7 @@ main {
   position: relative;
   top: -37%;
   padding: 10px 15px;
-  color: #111;
+  color: white;
   text-align: center;
   visibility: hidden;
   opacity: 0;
