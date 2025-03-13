@@ -276,10 +276,6 @@ main {
   transition: top 0.3s ease-in-out;
 }
 
-.container3 .card3 .image3 img {
-  border-radius: 15px;
-}
-
 .container3 .card3 .content3 {
   position: relative;
   padding: 10px 15px;
@@ -343,7 +339,7 @@ main {
 
 .container4 .card4 .image4 {
   position: relative;
-  top: 24%;
+  top: 30%;
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -353,10 +349,6 @@ main {
 .container4 .card4:hover .image4 {
   top: 0;
   transition: top 0.3s ease-in-out;
-}
-
-.container4 .card4 .image4 img {
-  border-radius: 15px;
 }
 
 .container4 .card4 .content4 {
@@ -405,7 +397,7 @@ main {
 
 .container5 .card5 .image5 {
   position: relative;
-  top: 18%;
+  top: 30%;
   z-index: 1;
   display: flex;
   justify-content: center;
@@ -413,17 +405,13 @@ main {
 }
 
 .container5 .card5:hover .image5 {
-  top: -6%;
+  top: 0;
   transition: top 0.3s ease-in-out;
-}
-
-.container5 .card5 .image5 img {
-  border-radius: 15px;
 }
 
 .container5 .card5 .content5 {
   position: relative;
-  top: -50px;
+  top: -20px;
   padding: 10px 15px;
   color: white;
   text-align: center;
@@ -561,10 +549,6 @@ main {
   top: -32%;
 }
 
-.container .card .image img {
-  border-radius: 15px;
-}
-
 .container .card .content {
   position: relative;
   top: -310px;
@@ -620,7 +604,6 @@ main {
 
 .container2 .card2 .image2 img {
   max-width: 100%;
-  border-radius: 15px;
 }
 
 .container2 .card2 .content2 {
