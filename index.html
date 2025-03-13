@@ -103,7 +103,7 @@
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="col-12 col-md-4 bg-dark container4">
                     <div class="card4">
                         <div class="image4 pt-3">
@@ -116,7 +116,7 @@
                         </div>
                     </div>
                 </div>
-        
+
                 <div class="col-12 col-md-4 bg-dark container5">
                     <div class="card5">
                         <div class="image5 pt-3">
@@ -180,224 +180,248 @@
             </div>
         </div>
 
-            <!-- Modal infos -->
-            <div class="modal fade" id="cursoModal" tabindex="-1" aria-labelledby="cursoModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="cursoModalLabel">Detalhes do Curso</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal"
-                                aria-label="Fechar"></button>
+        <!-- Modal infos -->
+        <div class="modal fade" id="cursoModal" tabindex="-1" aria-labelledby="cursoModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="cursoModalLabel">Detalhes do Curso</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="cursoModalSvgContainer" class="text-center">
                         </div>
-                        <div class="modal-body">
-                            <div id="cursoModalSvgContainer" class="text-center">
-                            </div>
-                            <p id="cursoModalBody"></p>
-                        </div>
+                        <p id="cursoModalBody"></p>
                     </div>
                 </div>
             </div>
+        </div>
 
-            <!-- Projetos -->
-            <div class="row pt-5" id="projetos">
-                <div class="row centra">
-                    <div class="col-12 bg-dark">
-                        <h1 id="title-projetos" class="pt-2 pb-2">Projetos</h1>
-                        <p class="p-projetos">Aqui estão os projetos realizados pelos alunos.</p>
-                        <div class="row row-cols-7 pb-3 g-2 justify-content-center">
-                            <div class="col-auto">
-                                <a href="#" class="nav-link hover-underline-animation center">Todos</a>
-                            </div>
-                            <div class="col-auto">
-                                <a href="#" class="nav-link hover-underline-animation center">Programação 3D</a>
-                            </div>
-                            <div class="col-auto">
-                                <a href="#" class="nav-link hover-underline-animation center">Programação Web</a>
-                            </div>
-                            <div class="col-auto">
-                                <a href="#" class="nav-link hover-underline-animation center">Interação</a>
-                            </div>
-                            <div class="col-auto">
-                                <a href="#" class="nav-link hover-underline-animation center">Animação</a>
-                            </div>    
+        <!-- Projetos -->
+        <div class="row pt-5" id="projetos">
+            <div class="row centra">
+                <div class="col-12 bg-dark">
+                    <h1 id="title-projetos" class="pt-2 pb-2">Projetos</h1>
+                    <p class="p-projetos">Aqui estão os projetos realizados pelos alunos.</p>
+                    <div class="row row-cols-7 pb-3 g-2 justify-content-center">
+                        <div class="col-auto">
+                            <a href="#" class="nav-link hover-underline-animation center">Todos</a>
                         </div>
-                        <div class="row" data-aos="fade-up">
-
-                            <div class="col-lg-4 col-md-6 portfolio-item filter-programacao3d image-container" >
-                              <img src="assets/video/fatgame/fatgame.png" class="img-fluid"  alt="">
-                              <button onclick="mostrarProjetoInfo('Fat Game - Unity 3D','Bruno Duarte','assets/video/fatgame/VideoFatGame.mp4')" class="view-more">Ver Mais</button>
-                              <div class="portfolio-info">
+                        <div class="col-auto">
+                            <a href="#" class="nav-link hover-underline-animation center">Programação 3D</a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="#" class="nav-link hover-underline-animation center">Programação Web</a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="#" class="nav-link hover-underline-animation center">Interação</a>
+                        </div>
+                        <div class="col-auto">
+                            <a href="#" class="nav-link hover-underline-animation center">Animação</a>
+                        </div>
+                    </div>
+                    <div class="row" data-aos="fade-up">
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-programacao3d image-container">
+                            <div class="media-container" onmouseover="playVideo(this)" onmouseout="stopVideo(this)">
+                                <img src="assets/video/fatgame/fatgame.png" class="img-fluid" alt="">
+                                <video class="video-preview" src="assets/video/fatgame/VideoFatGame.mp4" muted
+                                    loop></video>
+                            </div>
+                            <div class="portfolio-info">
                                 <h4 class="header-projetos pt-2">Fat Game - Unity 3D</h4>
                                 <p class="author-projetos">Bruno Duarte</p>
-                                <a href="assets/video/fatgame/VideoFatGame.mp4" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Fat Game"><i class="bx bx-plus"></i></a>
-                              </div>
                             </div>
-                            
-                            <div class="col-lg-4 col-md-6 portfolio-item filter-animacao image-container">
-                              <img src="assets/video/ecoescolas/ecoescolas.png" class="img-fluid" alt="">
-                              <button onclick="mostrarProjetoInfo('Projeto Eco Escolas - Animação','João Mirra','assets/video/ecoescolas/ecoescolas.mp4')" class="view-more">Ver Mais</button>
-                              <div class="portfolio-info">
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-animacao image-container">
+                            <div class="media-container" onmouseover="playVideo(this)" onmouseout="stopVideo(this)">
+                                <img src="assets/video/ecoescolas/ecoescolas.png" class="img-fluid" alt="">
+                                <video class="video-preview" src="assets/video/ecoescolas/ecoescolas.mp4" muted
+                                    loop></video>
+                            </div>
+                            <div class="portfolio-info">
                                 <h4 class="header-projetos pt-2">Projeto Eco Escolas - Animação</h4>
                                 <p class="author-projetos">João Mirra</p>
-                                <a href="assets/video/ecoescolas/ecoescolas.mp4" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Eco Escolas"><i class="bx bx-plus"></i></a>
-                              </div>
                             </div>
+                        </div>
 
-                            <div class="col-lg-4 col-md-6 portfolio-item filter-animacao image-container">
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-animacao image-container">
+                            <div class="media-container" onmouseover="playVideo(this)" onmouseout="stopVideo(this)">
                                 <img src="assets/video/kart/kart.png" class="img-fluid" alt="">
-                                <button onclick="mostrarProjetoInfo('Projeto Eco Escolas - Animação','João Mirra','assets/video/ecoescolas/ecoescolas.mp4')" class="view-more">Ver Mais</button>
-                                <div class="portfolio-info">
-                                  <h4 class="header-projetos pt-2">Mario Kart Race - Animação</h4>
-                                  <p class="author-projetos">Renato Madeira</p>
-                                  <a href="assets/video/kart/kart.mp4" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Eco Escolas"><i class="bx bx-plus"></i></a>
-                                </div>
-                              </div>
+                                <video class="video-preview" src="assets/video/kart/kart.mp4" muted loop></video>
+                            </div>
+                            <div class="portfolio-info">
+                                <h4 class="header-projetos pt-2">Mario Kart Race - Animação</h4>
+                                <p class="author-projetos">Renato Madeira</p>
+                            </div>
+                        </div>
 
-                              <div class="col-lg-4 col-md-6 portfolio-item filter-animacao image-container">
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-animacao image-container">
+                            <div class="media-container" onmouseover="playVideo(this)" onmouseout="stopVideo(this)">
                                 <img src="assets/video/Link and Zelda/linkzelda.png" class="img-fluid" alt="">
-                                <button onclick="mostrarProjetoInfo('Projeto Eco Escolas - Animação','João Mirra','assets/video/ecoescolas/ecoescolas.mp4')" class="view-more">Ver Mais</button>
-                                <div class="portfolio-info">
-                                  <h4 class="header-projetos pt-2">Link & Zelda - Animação</h4>
-                                  <p class="author-projetos">António Rebelo</p>
-                                  <a href="assets/video/Link and Zelda/videoplayback.mp4" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Eco Escolas"><i class="bx bx-plus"></i></a>
-                                </div>
-                              </div>
-                                                       
-                            <div class="col-lg-4 col-md-6 portfolio-item filter-web image-container">
-                              <img src="assets/video/brtec/imagem.png" class="img-fluid" alt="">
-                              <button onclick="mostrarProjetoInfo('BRTEC - Web','Luís, Hugo & Daniel','assets/video/brtec/video.mp4')" class="view-more">Ver Mais</button>
-                              <div class="portfolio-info">
+                                <video class="video-preview" src="assets/video/Link and Zelda/videoplayback.mp4" muted
+                                    loop></video>
+                            </div>
+                            <div class="portfolio-info">
+                                <h4 class="header-projetos pt-2">Link & Zelda - Animação</h4>
+                                <p class="author-projetos">António Rebelo</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-web image-container">
+                            <div class="media-container" onmouseover="playVideo(this)" onmouseout="stopVideo(this)">
+                                <img src="assets/video/brtec/imagem.png" class="img-fluid" alt="">
+                                <video class="video-preview" src="assets/video/brtec/video.mp4" muted loop></video>
+                            </div>
+                            <div class="portfolio-info">
                                 <h4 class="header-projetos pt-2">BRTEC - Web</h4>
                                 <p class="author-projetos">Luís, Hugo, Daniel</p>
-                                <a href="assets/video/brtec/video.mp4" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Building Real Time Environment Control "><i class="bx bx-plus"></i></a>
-                              </div>
                             </div>
-                  
-                            <div class="col-lg-4 col-md-6 portfolio-item filter-programacao3d image-container">
-                                <img src="assets/video/JuiceWars/JuiceWars.png" class="img-fluid" alt="Juice Wars">
-                                <button onclick="mostrarProjetoInfo('Juice Wars - Unity 3D','Bruno Freitas & Rogério Silva','assets/video/JuiceWars/Cutsceen.mp4')" class="view-more">Ver Mais</button>
-                                <div class="portfolio-info">
-                                  <h4 class="header-projetos pt-2">Juice Wars - Unity 3D</h4>
-                                  <p class="author-projetos">Bruno Freitas, Rogério Silva</p>
-                                  <a href="assets/video/JuiceWars/Cutsceen.mp4" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Juice Wars"><i class="bx bx-plus"></i></a>
-                                </div>
-                              </div>
+                        </div>
 
-                            <div class="col-lg-4 col-md-6 portfolio-item filter-programacao3d image-container">
-                              <img src="assets/video/twob/twob.png" class="img-fluid" alt="">
-                              <button onclick="mostrarProjetoInfo('TWOB Game - Unity 3D','Alexandra Branco','assets/video/twob/twob.mp4')" class="view-more">Ver Mais</button>
-                              <div class="portfolio-info">
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-programacao3d image-container">
+                            <div class="media-container" onmouseover="playVideo(this)" onmouseout="stopVideo(this)">
+                                <img src="assets/video/JuiceWars/JuiceWars.png" class="img-fluid" alt="">
+                                <video class="video-preview" src="assets/video/JuiceWars/Cutsceen.mp4" muted
+                                    loop></video>
+                            </div>
+                            <div class="portfolio-info">
+                                <h4 class="header-projetos pt-2">Juice Wars - Unity 3D</h4>
+                                <p class="author-projetos">Bruno Freitas, Rogério Silva</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-programacao3d image-container">
+                            <div class="media-container" onmouseover="playVideo(this)" onmouseout="stopVideo(this)">
+                                <img src="assets/video/twob/twob.png" class="img-fluid" alt="">
+                                <video class="video-preview" src="assets/video/twob/twob.mp4" muted loop></video>
+                            </div>
+                            <div class="portfolio-info">
                                 <h4 class="header-projetos pt-2">TWOB Game - Unity 3D</h4>
                                 <p class="author-projetos">Alexandra Branco</p>
-                                <a href="assets/video/twob/twob.mp4" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="TWOB Game"><i class="bx bx-plus"></i></a>
-                              </div>
                             </div>
-                            
-                            <div class="col-lg-4 col-md-6 portfolio-item filter-web image-container">
-                                <div class="media-container" onmouseover="playVideo(this)" onmouseout="stopVideo(this)">
-                                    <img src="assets/video/dbs/dragon_ball.png" class="img-fluid" alt="">
-                                    <video class="video-preview" src="assets/video/dbs/Super.mp4" muted loop></video>
-                                </div>
-                                <div class="portfolio-info">
-                                    <h4 class="header-projetos pt-2">DragonBall Super - Web</h4>
-                                    <p class="author-projetos">João Azevedo</p>
-                                </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-web image-container">
+                            <div class="media-container" onmouseover="playVideo(this)" onmouseout="stopVideo(this)">
+                                <img src="assets/video/dbs/dragon_ball.png" class="img-fluid" alt="">
+                                <video class="video-preview" src="assets/video/dbs/Super.mp4" muted loop></video>
                             </div>
-                  
-                            <div class="col-lg-4 col-md-6 portfolio-item filter-programacao3d image-container">
-                              <img src="assets/video/memoriae/memoriae.jpg" class="img-fluid" alt="">
-                              <button onclick="mostrarProjetoInfo('Memoriae - Programação','Miguel Andrade & Nuno Duarte','assets/video/memoriae/VideoMemoriae.mp4')" class="view-more">Ver Mais</button>
-                              <div class="portfolio-info">
+                            <div class="portfolio-info">
+                                <h4 class="header-projetos pt-2">DragonBall Super - Web</h4>
+                                <p class="author-projetos">João Azevedo</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-programacao3d image-container">
+                            <div class="media-container" onmouseover="playVideo(this)" onmouseout="stopVideo(this)">
+                                <img src="assets/video/memoriae/memoriae.jpg" class="img-fluid" alt="">
+                                <video class="video-preview" src="assets/video/memoriae/VideoMemoriae.mp4" muted
+                                    loop></video>
+                            </div>
+                            <div class="portfolio-info">
                                 <h4 class="header-projetos pt-2">Memoriae - Programação</h4>
                                 <p class="author-projetos">Miguel Andrade, Nuno Duarte</p>
-                                <a href="assets/video/memoriae/VideoMemoriae.mp4" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="Memoriae"><i class="bx bx-plus"></i></a>
-                              </div>
                             </div>
-                  
-                            <div class="col-lg-4 col-md-6 portfolio-item filter-programacao3d image-container">
-                              <img src="assets/video/monstros/aiMonstros.png" class="img-fluid" alt="">
-                              <button onclick="mostrarProjetoInfo('AI-Monstros - Unity 3D','Hugo Barbosa & Daniel Faria','assets/video/monstros/monstros.mp4')" class="view-more">Ver Mais</button>
-                              <div class="portfolio-info">
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-programacao3d image-container">
+                            <div class="media-container" onmouseover="playVideo(this)" onmouseout="stopVideo(this)">
+                                <img src="assets/video/monstros/aiMonstros.png" class="img-fluid" alt="">
+                                <video class="video-preview" src="assets/video/monstros/monstros.mp4" muted
+                                    loop></video>
+                            </div>
+                            <div class="portfolio-info">
                                 <h4 class="header-projetos pt-2">AI-Monstros - Unity 3D</h4>
                                 <p class="author-projetos">Hugo Barbosa, Daniel Faria</p>
-                                <a href="assets/video/monstros/monstros.mp4" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="AI - Monstros"><i class="bx bx-plus"></i></a>
-                              </div>
                             </div>
+                        </div>
 
-                            <div class="col-lg-4 col-md-6 portfolio-item filter-interacao image-container">
-                                <img src="assets/video/nursesimulator/nursesimulator.png" class="img-fluid" alt="">
-                                <a href="https://shoteose.github.io/NurseSimulatorGame/" class="view-more" target="_blank">Jogar</a>
-                                <div class="portfolio-info">
-                                  <h4 class="header-projetos">Nurse Simulator Game - Interação</h4>
-                                  <p class="author-projetos">Paulo Novo</p>
-                                </div>
-                              </div>
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-interacao image-container">
+                            <img src="assets/video/nursesimulator/nursesimulator.png" class="img-fluid" alt="">
+                            <a href="https://shoteose.github.io/NurseSimulatorGame/" class="view-more"
+                                target="_blank">Jogar</a>
+                            <div class="portfolio-info">
+                                <h4 class="header-projetos">Nurse Simulator Game - Interação</h4>
+                                <p class="author-projetos">Paulo Novo</p>
+                            </div>
+                        </div>
 
-                              <div class="col-lg-4 col-md-6 portfolio-item filter-interacao image-container">
-                                <img src="assets/video/kingdomslime/kingdomslime.png" class="img-fluid" alt="">
-                                <a href="https://shoteose.github.io/FantasyKingdomSlime/" class="view-more" target="_blank">Jogar</a>
-                                <div class="portfolio-info">
-                                  <h4 class="header-projetos">Fantasy Kingdom Slime Game - Interação</h4>
-                                  <p class="author-projetos">Paulo Novo</p>
-                                </div>
-                              </div>
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-interacao image-container">
+                            <img src="assets/video/kingdomslime/kingdomslime.png" class="img-fluid" alt="">
+                            <a href="https://shoteose.github.io/FantasyKingdomSlime/" class="view-more"
+                                target="_blank">Jogar</a>
+                            <div class="portfolio-info">
+                                <h4 class="header-projetos">Fantasy Kingdom Slime Game - Interação</h4>
+                                <p class="author-projetos">Paulo Novo</p>
+                            </div>
+                        </div>
 
-                              <div class="col-lg-4 col-md-6 portfolio-item filter-interacao image-container">
-                                <img src="assets/video/villagecompromised/villagecompromised.png" class="img-fluid" alt="">
-                                <a href="https://eduardoc0uto.github.io/VillageCompromised/" class="view-more" target="_blank">Jogar</a>
-                                <div class="portfolio-info">
-                                  <h4 class="header-projetos">Village Compromised Game - Interação</h4>
-                                  <p class="author-projetos">Eduardo Couto</p>
-                                </div>
-                              </div>
-                  
-                            <div class="col-lg-4 col-md-6 portfolio-item filter-web image-container">
-                              <img src="assets/video/highermat/highermat.png" class="img-fluid" alt="">
-                              <button onclick="mostrarProjetoInfo('HigherMat - Web','Pedro Vilaça','assets/video/highermat/HigherMat.mp4')" class="view-more">Ver Mais</button>
-                              <div class="portfolio-info">
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-interacao image-container">
+                            <img src="assets/video/villagecompromised/villagecompromised.png" class="img-fluid" alt="">
+                            <a href="https://eduardoc0uto.github.io/VillageCompromised/" class="view-more"
+                                target="_blank">Jogar</a>
+                            <div class="portfolio-info">
+                                <h4 class="header-projetos">Village Compromised Game - Interação</h4>
+                                <p class="author-projetos">Eduardo Couto</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-web image-container">
+                            <div class="media-container" onmouseover="playVideo(this)" onmouseout="stopVideo(this)">
+                                <img src="assets/video/highermat/highermat.png" class="img-fluid" alt="">
+                                <video class="video-preview" src="assets/video/highermat/HigherMat.mp4" muted
+                                    loop></video>
+                            </div>
+                            <div class="portfolio-info">
                                 <h4 class="header-projetos pt-2">HigherMat - Web</h4>
                                 <p class="author-projetos">Pedro Vilaça</p>
-                              </div>
                             </div>
+                        </div>
 
-                            <div class="col-lg-4 col-md-6 portfolio-item filter-programacao3d image-container">
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-programacao3d image-container">
+                            <div class="media-container" onmouseover="playVideo(this)" onmouseout="stopVideo(this)">
                                 <img src="assets/video/corrida/corrida.png" class="img-fluid" alt="">
-                                <button onclick="mostrarProjetoInfo('Corrida - Unity 3D','Luís Cerqueira & Marco Fonte','assets/video/corrida/corrida.mp4')" class="view-more">Ver Mais</button>
-                                <div class="portfolio-info">
-                                  <h4 class="header-projetos pt-2">Corrida - Unity 3D</h4>
-                                  <p class="author-projetos">Luís Cerqueira, Marco Fonte</p>
-                                </div>
-                              </div>
-                              <div class="col-lg-4 col-md-6 portfolio-item filter-interacao image-container">
-                                <img src="assets/video/lego/lego.png" class="img-fluid" alt="">
-                                <button onclick="mostrarProjetoInfo('AI-Monstros - Unity 3D','Hugo Barbosa & Daniel Faria','assets/video/monstros/monstros.mp4')" class="view-more">Ver Mais</button>
-                                <div class="portfolio-info">
-                                  <h4 class="header-projetos pt-2">LEGO - Interação Homem-Máquina</h4>
-                                  <p class="author-projetos">Luís Cerqueira</p>
-                                  <a href="assets/video/lego/LEGO.mp4" data-gallery="portfolioGallery" class="portfolio-lightbox preview-link" title="AI - Monstros"><i class="bx bx-plus"></i></a>
-                                </div>
-                              </div>
-                          </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="modal fade" id="portfolioModal" tabindex="-1" aria-labelledby="portfolioModalLabel" aria-hidden="true">
-                <div class="modal-dialog">
-                    <div class="modal-content">
-                        <div class="modal-header">
-                            <h5 class="modal-title" id="portfolioModalLabel">Título do Projeto</h5>
-                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
-                        </div>
-                        <div class="modal-body">
-                            <div id="portfolioModalImageContainer" class="text-center">
-                                <!-- Imagem ou vídeo aqui -->
+                                <video class="video-preview" src="assets/video/corrida/corrida.mp4" muted loop></video>
                             </div>
-                            <p id="portfolioModalBody">Autor(es): </p>
+                            <div class="portfolio-info">
+                                <h4 class="header-projetos pt-2">Corrida - Unity 3D</h4>
+                                <p class="author-projetos">Luís Cerqueira, Marco Fonte</p>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-6 portfolio-item filter-interacao image-container">
+                            <div class="media-container" onmouseover="playVideo(this)" onmouseout="stopVideo(this)">
+                                <img src="assets/video/lego/lego.png" class="img-fluid" alt="">
+                                <video class="video-preview" src="assets/video/lego/LEGO.mp4" muted loop></video>
+                            </div>
+                            <div class="portfolio-info">
+                                <h4 class="header-projetos pt-2">LEGO - Interação Homem-Máquina</h4>
+                                <p class="author-projetos">Luís Cerqueira</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
+        </div>
+
+        <div class="modal fade" id="portfolioModal" tabindex="-1" aria-labelledby="portfolioModalLabel"
+            aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="portfolioModalLabel">Título do Projeto</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                    </div>
+                    <div class="modal-body">
+                        <div id="portfolioModalImageContainer" class="text-center">
+                            <!-- Imagem ou vídeo aqui -->
+                        </div>
+                        <p id="portfolioModalBody">Autor(es): </p>
+                    </div>
+                </div>
+            </div>
+        </div>
 
         <!-- Contactos -->
         <div class="row pt-5 pb-4" id="contactos">
@@ -460,7 +484,7 @@
                     Licenciatura em Engenharia da Computação Gráfica e Multimédia, <span id="ano"></span>
                 </p>
             </div>
-    
+
             <!-- Redes Sociais e Apoios -->
             <div class="footer-links">
                 <!-- Redes Sociais -->
@@ -476,7 +500,7 @@
                         <img class="icon-redes" src="assets/redes/facebook.png" alt="Facebook">
                     </a>
                 </div>
-    
+
                 <!-- Apoios -->
                 <div class="apoios">
                     <p class="footer-text">Apoios:</p>
