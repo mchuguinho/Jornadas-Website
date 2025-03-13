@@ -3,13 +3,45 @@
 
 // Carrega a imagem de fundo de forma assíncrona
 document.addEventListener("DOMContentLoaded", function () {
+  const loader = document.getElementById("loader");
+  const body = document.body;
   const bgImage = new Image();
   bgImage.src = "assets/icons/background_gauss.png";
 
+  let imageLoaded = false;
+  let minTimePassed = false;
+
   bgImage.onload = function () {
-    document.getElementById("loader").style.display = "none"; // Remove o loader
-    document.body.style.opacity = "1"; // Exibe o site
+    setTimeout(() => {
+      minLoadTime = true;
+      checkAndHideLoader();
+    }, 1500);
   };
+
+  setTimeout(() => {
+    minLoadTime = true;
+    if (bgImage.complete) {
+      hideLoader();
+    }
+  }, 1500);
+
+  function hideLoader() {
+    loader.classList.add("hidden");
+    body.style.opacity = "1";
+  }
+
+  function checkLoadCompletion() {
+    if (minLoadTime && bgImage.complete) {
+      hideLoader();
+    }
+  }
+
+  function hideLoader() {
+    loader.classList.add("hidden");
+    setTimeout(() => {
+      body.style.opacity = "1";
+    }, 500);
+  }
 });
 
 /*

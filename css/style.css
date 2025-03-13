@@ -30,8 +30,12 @@ body {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  transition: opacity 1s ease-in-out;
+}
+
+#loader.hidden{
   opacity: 0;
-  transition: opacity 3s ease-in-out;
+  visibility: hidden;
 }
 
 #loader {
@@ -40,15 +44,15 @@ body {
   left: 0;
   width: 100vw;
   height: 100vh;
-  background-color: #ffffff; 
+  background-color: #ffffff; /* Fundo branco */
   display: flex;
   justify-content: center;
   align-items: center;
   z-index: 9999;
+  transition: opacity 1s ease-in-out, visibility 1s ease-in-out;
 }
 
 #loader img {
-  margin: 0 auto;
   width: 80px;
   height: 80px;
   animation: rotacaoZ 1s linear infinite;
@@ -243,7 +247,6 @@ main {
   position: relative;
   max-width: 300px;
   height: 255px;
-  background-color: #fff;
   margin: 30px 10px;
   padding: 20px 15px;
   display: flex;
@@ -274,7 +277,7 @@ main {
 .container3 .card3 .content3 {
   position: relative;
   padding: 10px 15px;
-  color: #111;
+  color: white;
   text-align: center;
   visibility: hidden;
   opacity: 0;
@@ -323,7 +326,6 @@ main {
   position: relative;
   max-width: 300px;
   height: 255px;
-  background-color: #fff;
   margin: 30px 10px;
   padding: 20px 15px;
   display: flex;
@@ -355,7 +357,7 @@ main {
   position: relative;
   top: -10%;
   padding: 10px 15px;
-  color: #111;
+  color: white;
   text-align: center;
   visibility: hidden;
   opacity: 0;
@@ -386,7 +388,6 @@ main {
   position: relative;
   max-width: 300px;
   height: 255px;
-  background-color: #fff;
   margin: 30px 10px;
   padding: 20px 15px;
   display: flex;
@@ -418,7 +419,7 @@ main {
   position: relative;
   top: -50px;
   padding: 10px 15px;
-  color: #111;
+  color: white;
   text-align: center;
   visibility: hidden;
   opacity: 0;
@@ -451,11 +452,11 @@ main {
 
 @keyframes svg-glow {
   from {
-    filter: drop-shadow(0 0 6px rgb(0, 88, 116)) drop-shadow(0 0 10px rgb(0, 88, 116)) drop-shadow(0 0 13px rgb(248, 178, 83));
+    filter: drop-shadow(0 0 3px rgb(0, 88, 116)) drop-shadow(0 0 5px rgb(0, 88, 116)) drop-shadow(0 0 7px rgb(248, 178, 83));
   }
 
   to {
-    filter: drop-shadow(0 0 7px rgb(248, 178, 83)) drop-shadow(0 0 10px rgb(0, 88, 116)) drop-shadow(0 0 15px rgb(0, 88, 116));
+    filter: drop-shadow(0 0 3px rgb(248, 178, 83)) drop-shadow(0 0 5px rgb(0, 88, 116)) drop-shadow(0 0 7px rgb(0, 88, 116));
   }
 }
 
@@ -530,7 +531,7 @@ main {
   position: relative;
   max-width: 300px;
   height: 255px;
-  background-color: #fff;
+  background-color: transparent;
   margin: 30px 10px;
   padding: 20px 15px;
   display: flex;
@@ -554,7 +555,7 @@ main {
   position: relative;
   top: -270px;
   padding: 10px 15px;
-  color: #111;
+  color: white;
   text-align: center;
   visibility: hidden;
   opacity: 0;
@@ -574,7 +575,6 @@ main {
   position: relative;
   max-width: 300px;
   height: 255px;
-  background-color: #fff;
   margin: 30px 10px;
   padding: 20px 15px;
   display: flex;
@@ -601,7 +601,7 @@ main {
   position: relative;
   top: -37%;
   padding: 10px 15px;
-  color: #111;
+  color: white;
   text-align: center;
   visibility: hidden;
   opacity: 0;
