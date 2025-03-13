@@ -87,13 +87,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     const filterMap = {
         "Todos": "todos",
-        "Programação": "filter-programacao",
-        "Modelação 3D": "filter-modelacao",
+        "Programação 3D": "filter-programacao3d",
         "Programação Web": "filter-web",
-        "Unity 3D": "filter-unity",
-        "Animação": "filter-animacao",
-        "Aplicações": "filter-aplicacao",
-        "Jogáveis": "filter-jogaveis"
+        "Interação": "filter-interacao",
+        "Animação": "filter-animacao"
     };
 
     filterLinks.forEach(link => {
@@ -120,7 +117,24 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// Modal para os portfolio itens
+function playVideo(element) {
+    const img = element.querySelector("img");
+    const video = element.querySelector("video");
+    img.style.display = "none";
+    video.style.display = "block";
+    video.play();
+}
+
+function stopVideo(element) {
+    const img = element.querySelector("img");
+    const video = element.querySelector("video");
+    video.pause();
+    video.currentTime = 0;
+    video.style.display = "none";
+    img.style.display = "block";
+}
+
+/* 
 function mostrarProjetoInfo(titulo, autores, mediaSrc) {
     document.getElementById('portfolioModalLabel').innerText = titulo;
     document.getElementById('portfolioModalBody').innerText = "Autor(es): " + autores;
@@ -145,4 +159,4 @@ function mostrarProjetoInfo(titulo, autores, mediaSrc) {
     var modal = new bootstrap.Modal(document.getElementById('portfolioModal'));
     modal.show();
 }
-
+*/

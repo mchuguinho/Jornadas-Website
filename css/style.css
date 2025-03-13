@@ -512,6 +512,7 @@ svg {
 }
 
 .header-projetos {
+  font-size: 20px;
   font-weight: bold;
   color: white;
 }
@@ -683,6 +684,8 @@ svg {
 .portfolio-details .portfolio-description p {
   padding: 0;
 }
+
+
 
 /* FOOTER */
 .footer {
