@@ -189,34 +189,231 @@ main {
   place-content: center;
 }
 
-#ecgm {
-    transform: scale(0.7);
+#ecgm, #dwm, #ncgm {
+  transform: scale(0.75);
+  transition: transform 0.5s ease;
 }
 
-#dwm {
-  transform: scale(1.5);
-}
-
-#ncgm {
-  transform: scale(1.2);
-}
-
-.centra {
-  margin: 0 auto;
-  place-content: center;
-}
-
-.title-cursos {
+#info {
+  font-weight: bold;
   color: white;
-  margin-top: 10px;
-  font-size: 30px;
   text-align: center;
 }
 
-svg {
-  padding-top: 3%;
-  width: 40%;
-  height: 40%;
+.titleECGM, .titleDWM, .titleNCGM {
+  font-weight: bold;
+}
+
+.textoECGM, .textoDWM, .textoNCGM {
+  font-size: 16px;
+  font-family: Nexa;
+}
+
+.container3 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.container3 .card3 {
+  position: relative;
+  max-width: 300px;
+  height: 255px;
+  background-color: #fff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+  border-radius: 15px;
+}
+
+.container3 .card3 .image3 {
+  position: relative;
+  top: 30%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  transition: top 0.3s ease-in-out;
+}
+
+.container3 .card3:hover .image3 {
+  top: 0;
+  transition: top 0.3s ease-in-out;
+}
+
+.container3 .card3 .image3 img {
+  border-radius: 15px;
+}
+
+.container3 .card3 .content3 {
+  position: relative;
+  padding: 10px 15px;
+  color: #111;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.container3 .card3:hover {
+  height: 350px;
+}
+
+@media (max-width: 320px) {
+  .container3 .card3:hover {
+    height: 400px;
+  }
+}
+
+
+@media (min-width: 768px) and (max-width: 954px){
+  .container3 .card3:hover {
+    height: 430px !important;
+  }
+  .container4 .card4:hover {
+    height: 330px !important;
+  }
+  .container5 .card5:hover {
+    height: 350px !important;
+  }
+}
+
+.container3 .card3:hover .content3 {
+  margin-top: 10px;
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.container4 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.container4 .card4 {
+  position: relative;
+  max-width: 300px;
+  height: 255px;
+  background-color: #fff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+  border-radius: 15px;
+}
+
+.container4 .card4 .image4 {
+  position: relative;
+  top: 24%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  transition: top 0.3s ease-in-out;
+}
+
+.container4 .card4:hover .image4 {
+  top: 0;
+  transition: top 0.3s ease-in-out;
+}
+
+.container4 .card4 .image4 img {
+  border-radius: 15px;
+}
+
+.container4 .card4 .content4 {
+  position: relative;
+  top: -10%;
+  padding: 10px 15px;
+  color: #111;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.container4 .card4:hover {
+  height: 300px;
+}
+
+.container4 .card4:hover .content4 {
+  margin-top: 30px;
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.container5 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 0;
+}
+
+.container5 .card5 {
+  position: relative;
+  max-width: 300px;
+  height: 255px;
+  background-color: #fff;
+  margin: 30px 10px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease-in-out;
+  border-radius: 15px;
+}
+
+.container5 .card5 .image5 {
+  position: relative;
+  top: 18%;
+  z-index: 1;
+  display: flex;
+  justify-content: center;
+  transition: top 0.3s ease-in-out;
+}
+
+.container5 .card5:hover .image5 {
+  top: -6%;
+  transition: top 0.3s ease-in-out;
+}
+
+.container5 .card5 .image5 img {
+  border-radius: 15px;
+}
+
+.container5 .card5 .content5 {
+  position: relative;
+  top: -50px;
+  padding: 10px 15px;
+  color: #111;
+  text-align: center;
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.container5 .card5:hover {
+  height: 300px;
+}
+
+.container5 .card5:hover .content5 {
+  margin-top: 30px;
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.2s;
 }
 
 .col-12.col-md-4 svg {
@@ -391,6 +588,33 @@ svg {
   transition: 0.3s ease-in-out;
 
 }
+
+.container .card:hover {
+  height: 500px;
+}
+
+.container .card:hover .content {
+  margin-top: 30px;
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
+.container2 .card2:hover {
+  height: 500px;
+}
+
+.container2 .card2:hover .image2 {
+  top: -17%;
+}
+
+.container2 .card2:hover .content2 {
+  margin-top: 30px;
+  visibility: visible;
+  opacity: 1;
+  transition-delay: 0.2s;
+}
+
 
 .icon-workshop {
   animation: rotacaoZ 5s linear infinite;
