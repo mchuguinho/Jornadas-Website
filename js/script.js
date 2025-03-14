@@ -8,33 +8,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const bgImage = new Image();
   bgImage.src = "assets/icons/background_gauss.png";
 
-  let imageLoaded = false;
-  let minTimePassed = false;
-
-  bgImage.onload = function () {
-    setTimeout(() => {
-      minLoadTime = true;
-      checkAndHideLoader();
-    }, 1500);
-  };
-
-  setTimeout(() => {
-    minLoadTime = true;
-    if (bgImage.complete) {
-      hideLoader();
-    }
-  }, 1500);
-
-  function hideLoader() {
-    loader.classList.add("hidden");
-    body.style.opacity = "1";
-  }
-
-  function checkLoadCompletion() {
-    if (minLoadTime && bgImage.complete) {
-      hideLoader();
-    }
-  }
+  let minLoadTime = false;
 
   function hideLoader() {
     loader.classList.add("hidden");
@@ -42,6 +16,24 @@ document.addEventListener("DOMContentLoaded", function () {
       body.style.opacity = "1";
     }, 500);
   }
+
+  function checkAndHideLoader() {
+    if (minLoadTime && bgImage.complete) {
+      hideLoader();
+    }
+  }
+  bgImage.onload = function () {
+    minLoadTime = true;
+    checkAndHideLoader();
+  };
+  if (bgImage.complete) {
+    minLoadTime = true;
+    checkAndHideLoader();
+  }
+  setTimeout(() => {
+    minLoadTime = true;
+    checkAndHideLoader();
+  }, 1500);
 });
 
 /*
