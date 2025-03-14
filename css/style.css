@@ -1098,12 +1098,6 @@ main {
   height: auto;
 }
 
-#title-contacto {
-  font-weight: bold;
-  color: white;
-  text-align: center;
-}
-
 .title-contacto {
   font-weight: bold;
   color: white;
@@ -1123,7 +1117,6 @@ main {
 
 .iframe {
   padding: 0px;
-  text-align: center;
 }
 
 .no-pad {
