@@ -6,7 +6,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const loader = document.getElementById("loader");
   const body = document.body;
   const bgImage = new Image();
-  bgImage.src = "assets/icons/background_gauss.png";
+  bgImage.src = "assets/icons/background_gauss.webp";
 
   let minLoadTime = false;
 
