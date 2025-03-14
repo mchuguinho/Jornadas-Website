@@ -120,6 +120,12 @@ main {
   font-weight: bold;
 }
 
+.toggler {
+  margin-right: 0px;
+  justify-content: right;
+  padding-right: 20px;
+}
+
 .hover-underline-animation {
   display: inline-block;
   position: relative;
@@ -180,7 +186,7 @@ main {
 }
 
 #video-jornadas {
-  border: 2px solid;
+  border: 1px solid;
   border-color: rgba(248, 178, 83, 255);
 }
 
