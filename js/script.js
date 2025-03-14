@@ -7,26 +7,30 @@ document.addEventListener("DOMContentLoaded", function () {
   var navbarCollapse = document.querySelector(".navbar-collapse");
   var isOpen = false;
 
+  if (window.innerWidth >= 992) {
+    navbarCollapse.classList.add("show");
+    navbarCollapse.style.maxHeight = "none";
+  } else {
+    navbarCollapse.classList.remove("show");
+    navbarCollapse.style.maxHeight = "0";
+  }
+
   navbarToggler.setAttribute("data-bs-toggle", "");
-  
-  navbarCollapse.classList.remove("show");
-  navbarCollapse.style.maxHeight = "0";
 
   navbarToggler.addEventListener("click", function (e) {
     e.preventDefault();
     if (isOpen) {
       navbarCollapse.style.maxHeight = "0";
-      setTimeout(function() {
+      setTimeout(function () {
         navbarCollapse.classList.remove("show");
       }, 400);
     } else {
       navbarCollapse.classList.add("show");
-      setTimeout(function() {
+      setTimeout(function () {
         var height = navbarCollapse.scrollHeight + "px";
         navbarCollapse.style.maxHeight = height;
       }, 10);
     }
-    
     isOpen = !isOpen;
   });
 
@@ -34,14 +38,25 @@ document.addEventListener("DOMContentLoaded", function () {
     link.addEventListener("click", function () {
       if (window.innerWidth < 992 && isOpen) {
         navbarCollapse.style.maxHeight = "0";
-        setTimeout(function() {
+        setTimeout(function () {
           navbarCollapse.classList.remove("show");
         }, 400);
         isOpen = false;
       }
     });
   });
+
+  window.addEventListener("resize", function () {
+    if (window.innerWidth >= 992) {
+      navbarCollapse.classList.add("show");
+      navbarCollapse.style.maxHeight = "none";
+    } else {
+      navbarCollapse.classList.remove("show");
+      navbarCollapse.style.maxHeight = "0";
+    }
+  });
 });
+
 
 // Carrega a imagem de fundo de forma assíncrona
 document.addEventListener("DOMContentLoaded", function () {
