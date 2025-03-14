@@ -175,8 +175,6 @@ main {
 }
 
 .logo-jornadas:hover {
-  animation: rotacaoY 5s linear infinite;
-  transform-style: preserve-3d;
   display: block;
   perspective: 1000px;
 }
