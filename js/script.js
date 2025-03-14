@@ -1,6 +1,48 @@
 // Autor: Hugo Diniz e Eduardo Couto
 // Armazena as informações de cada curso e do núcleo para posteriormente apresentá-las no modal
 
+// Fecha a navbar ao clicar num link
+document.addEventListener("DOMContentLoaded", function () {
+  var navbarToggler = document.querySelector(".navbar-toggler");
+  var navbarCollapse = document.querySelector(".navbar-collapse");
+  var isOpen = false;
+
+  navbarToggler.setAttribute("data-bs-toggle", "");
+  
+  navbarCollapse.classList.remove("show");
+  navbarCollapse.style.maxHeight = "0";
+
+  navbarToggler.addEventListener("click", function (e) {
+    e.preventDefault();
+    if (isOpen) {
+      navbarCollapse.style.maxHeight = "0";
+      setTimeout(function() {
+        navbarCollapse.classList.remove("show");
+      }, 400);
+    } else {
+      navbarCollapse.classList.add("show");
+      setTimeout(function() {
+        var height = navbarCollapse.scrollHeight + "px";
+        navbarCollapse.style.maxHeight = height;
+      }, 10);
+    }
+    
+    isOpen = !isOpen;
+  });
+
+  document.querySelectorAll(".navbar-nav .nav-link").forEach(function (link) {
+    link.addEventListener("click", function () {
+      if (window.innerWidth < 992 && isOpen) {
+        navbarCollapse.style.maxHeight = "0";
+        setTimeout(function() {
+          navbarCollapse.classList.remove("show");
+        }, 400);
+        isOpen = false;
+      }
+    });
+  });
+});
+
 // Carrega a imagem de fundo de forma assíncrona
 document.addEventListener("DOMContentLoaded", function () {
   const loader = document.getElementById("loader");
